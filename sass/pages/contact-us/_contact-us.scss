@@ -1,0 +1,79 @@
+.#{$prefix}contact-us {
+	.#{$prefix}contact-icon-wrapper {
+		@include rfs(20px, gap);
+		background-color: rgba($color: $primary, $alpha: 0.1);
+		@include rfs(298px, margin-right);
+		@include rfs(20px, margin-bottom);
+		@include rfs(20px, padding);
+		flex-wrap: wrap;
+		.#{$prefix}contact-us-num-wrapper {
+			@include rfs(10px, gap);
+			flex-wrap: wrap;
+		}
+		figure {
+			@include rfs(50px, width);
+			@include rfs(50px, height);
+			background-color: $secondary;
+			@include rfs(5px, border-radius);
+		}
+		.#{$prefix}contact-us-content-wrap {
+			@include rfs(10px, gap);
+			h3 {
+				@include rfs(24px, font-size);
+				@include rfs(31px, line-height);
+			}
+			a {
+				transition: $transition-base;
+				&:hover {
+					color: $red;
+				}
+			}
+			.#{$prefix}contact-us-num-wrapper {
+				@include rfs(10px, gap);
+			}
+		}
+	}
+	.#{$prefix}form-wrapper {
+		input {
+			@include rfs(15px, padding);
+			border-color: rgba($color: $primary, $alpha: 0.1);
+			&::placeholder {
+				color: $gray-d;
+			}
+		}
+		textarea {
+			@include rfs(15px, padding);
+			&::placeholder {
+				color: $gray-d;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.#{$prefix}contact-us {
+		.#{$prefix}contact-icon-wrapper {
+			@include rfs(10px, gap);
+			@include rfs(100px, margin-right);
+			@include rfs(10px, margin-bottom);
+			@include rfs(10px, padding);
+		}
+	}
+}
+@include media-breakpoint-down(sm) {
+	.#{$prefix}contact-us {
+		.#{$prefix}main-heading-wrapper {
+			@include rfs(10px, margin-bottom);
+		}
+		.#{$prefix}contact-icon-wrapper {
+			@include rfs(10px, gap);
+			@include rfs(0px, margin-right);
+			@include rfs(10px, margin-bottom);
+			@include rfs(10px, padding);
+			text-wrap: wrap;
+		}
+		.grid {
+			@include rfs(10px, gap);
+		}
+	}
+}

@@ -1,0 +1,109 @@
+.entery-header {
+	background: rgb(70, 41, 90);
+	background: linear-gradient(90deg, rgba(70, 41, 90, 0.2) 0%, rgba(250, 198, 59, 0.2) 100%);
+	@include rfs(200px 0, padding);
+	position: relative;
+
+	.#{$prefix}shape-1 {
+		position: absolute;
+		@include rfs(428px, left);
+		@include rfs(189px, top);
+	}
+	.#{$prefix}shape-2 {
+		position: absolute;
+		@include rfs(181px, left);
+		@include rfs(25px, bottom);
+	}
+	.#{$prefix}shape-3 {
+		position: absolute;
+		@include rfs(637px, left);
+		@include rfs(0px, bottom);
+	}
+	.#{$prefix}shape-4 {
+		position: absolute;
+		@include rfs(648px, right);
+		@include rfs(48px, bottom);
+	}
+	.#{$prefix}shape-5 {
+		position: absolute;
+		@include rfs(298px, right);
+		@include rfs(35px, bottom);
+	}
+	.#{$prefix}shape-6 {
+		position: absolute;
+		@include rfs(215px, right);
+		@include rfs(136px, top);
+	}
+
+	.#{$prefix}entery-header-text-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		@include rfs(20px, gap);
+		flex-wrap: wrap;
+
+		a {
+			@include rfs(20px, padding-right);
+			border-right: 1px solid $text;
+		}
+		span {
+			@include rfs(20px, padding-left);
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.#{$prefix}shape-1 {
+		display: none;
+	}
+	.#{$prefix}shape-2 {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.#{$prefix}shape-3 {
+		display: none;
+	}
+	.#{$prefix}shape-4 {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.#{$prefix}shape-5 {
+		display: none;
+	}
+	.#{$prefix}shape-6 {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}shape-5 {
+		display: none;
+	}
+	.#{$prefix}shape-6 {
+		display: none;
+	}
+	.entery-header {
+		.#{$prefix}entery-header-text-content {
+			.#{$prefix}entery-header-link-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				a {
+					border-right: none;
+					padding-right: 0;
+				}
+				span {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}

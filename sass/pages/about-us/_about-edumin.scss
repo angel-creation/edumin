@@ -1,0 +1,37 @@
+.#{$prefix}about-us {
+	position: relative;
+	.shape-1 {
+		position: absolute;
+		@include rfs(100px, left);
+		bottom: 0;
+	}
+	.#{$prefix}about-edumim-content-wrapper {
+		@include rfs(50px, gap);
+		ul {
+			@include rfs(20px, gap);
+			li {
+				position: relative;
+				p {
+					margin-left: 30px;
+				}
+				&::before {
+					content: url("../media/check-yes\ 1.webp");
+					position: absolute;
+					top: 5px;
+					bottom: 0;
+					margin: auto 0;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-down(sm) {
+	.#{$prefix}about-us {
+		.#{$prefix}about-edumim-content-wrapper {
+			@include rfs(10px, gap);
+			ul {
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}

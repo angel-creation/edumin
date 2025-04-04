@@ -1,0 +1,157 @@
+.#{$prefix}footer {
+	background-color: $primary;
+	@include rfs(100px 0 0 0, padding);
+	p {
+		color: $white;
+	}
+
+	.#{$prefix}footer-col-wrapper {
+		@include rfs(20px, gap);
+		.#{$prefix}icon-wrapper {
+			@include rfs(10px, gap);
+
+			a {
+				@include rfs(35px, width);
+				@include rfs(35px, height);
+				background-color: $primary-100;
+				@include rfs(5px, border-radius);
+				transition: $transition-base;
+
+				&:hover {
+					background-color: $secondary;
+				}
+			}
+		}
+	}
+	.#{$prefix}link-wrapper {
+		@include rfs(20px, gap);
+
+		h2 {
+			color: $white;
+			@include rfs(24px, font-size);
+			@include rfs(32px, line-height);
+		}
+		ul {
+			@include rfs(10px, gap);
+			a {
+				color: $white;
+				transition: $transition-base;
+				&:hover {
+					color: $secondary;
+				}
+			}
+		}
+	}
+
+	.#{$prefix}contact-wrapper {
+		@include rfs(20px, gap);
+
+		.#{$prefix}address-wrapper {
+			@include rfs(10px, gap);
+			.#{$prefix}icon-box {
+				@include rfs(35px, width);
+				@include rfs(35px, height);
+				background-color: $primary-100;
+				@include rfs(5px, border-radius);
+			}
+
+			a {
+				color: $white;
+				transition: $transition-base;
+
+				&:hover {
+					color: $secondary;
+				}
+			}
+		}
+		h3 {
+			color: $white;
+			@include rfs(24px, font-size);
+			@include rfs(32px, line-height);
+		}
+		form {
+			@include rfs(20px, gap);
+			input {
+				@include rfs(10px 15px, padding);
+				@include rfs(5px, border-radius);
+			}
+			.#{$prefix}subcribe-btn {
+				@include rfs(10px 15px, padding);
+				background-color: $secondary;
+				@include rfs(5px, border-radius);
+				color: $black;
+				transition: $transition-base;
+
+				&:hover {
+					color: $primary;
+					background-color: $white;
+				}
+			}
+		}
+	}
+	.#{$prefix}privacy-policy {
+		@include rfs(50px, margin-top);
+		background-color: $secondary;
+		@include rfs(20px 0, padding);
+		p {
+			color: $text;
+		}
+
+		a {
+			color: $text;
+			transition: $transition-base;
+			&:hover {
+				color: $white;
+			}
+		}
+		.#{$prefix}privacy-policy-wrapper {
+			@include rfs(10px, gap);
+			.#{$prefix}privacy-policy-content {
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}footer {
+		.grid {
+			.#{$prefix}footer-col-wrapper {
+				@include rfs(10px, gap);
+
+				.#{$prefix}icon-wrapper {
+					a {
+						width: 25px;
+						height: 25px;
+						svg {
+							width: 15px;
+							height: 15px;
+						}
+					}
+				}
+
+				span {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			.#{$prefix}link-wrapper {
+				@include rfs(10px, gap);
+			}
+			.#{$prefix}contact-wrapper {
+				@include rfs(10px, gap);
+				.#{$prefix}icon-box {
+					width: 25px;
+					height: 25px;
+					svg {
+						width: 15px;
+						height: 15px;
+					}
+				}
+			}
+			form {
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}

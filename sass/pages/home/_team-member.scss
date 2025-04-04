@@ -1,0 +1,80 @@
+.#{$prefix}team-member {
+	position: relative;
+	.shape-1 {
+		position: absolute;
+		@include rfs(80px, top);
+		left: 0;
+	}
+	.shape-2 {
+		position: absolute;
+		@include rfs(36px, top);
+		right: 0;
+	}
+
+	.shape-3 {
+		position: absolute;
+		@include rfs(83px, bottom);
+		@include rfs(34px, left);
+	}
+	.shape-4 {
+		position: absolute;
+		@include rfs(217px, top);
+		@include rfs(85px, left);
+	}
+
+	.#{$prefix}team-member-wraper {
+		width: 100%;
+		height: 100%;
+
+		figure {
+			width: 100%;
+			img {
+				width: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+
+		.#{$prefix}text-content {
+			@include rfs(20px, padding);
+			@include rfs(10px, gap);
+			background-color: $primary;
+			h3 {
+				@include rfs(24px, font-size);
+				@include rfs(32px, line);
+				color: $white;
+			}
+			span {
+				@include rfs(20px, font-size);
+				@include rfs(27px, line-height);
+				color: $white;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+	.shape-3 {
+		display: none;
+	}
+
+	.shape-4 {
+		display: none;
+	}
+	.#{$prefix}team-member {
+		.grid {
+			@include rfs(10px, gap);
+			.#{$prefix}team-member-wraper {
+				.#{$prefix}text-content {
+					@include rfs(10px, padding);
+				}
+			}
+		}
+	}
+}

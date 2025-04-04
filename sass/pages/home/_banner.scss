@@ -1,0 +1,283 @@
+.#{$prefix}banner {
+	// background-image: linear-gradient(to right bottom, $primary-100, $secondary-100);
+	background: rgb(70, 41, 90);
+	background: linear-gradient(130deg, rgba(70, 41, 90, 0.1) 0%, rgba(250, 198, 59, 0.1) 100%);
+	position: relative;
+	margin-top: 0;
+	height: 100%;
+	position: relative;
+
+	.main-shape {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.shape-1 {
+		width: 138px;
+		height: auto;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		position: absolute;
+		bottom: 233px;
+		left: 28px;
+	}
+	.shape-2 {
+		img {
+			width: 100%;
+		}
+		position: absolute;
+		@include rfs(131px, bottom);
+		@include rfs(420px, left);
+	}
+
+	.shape-3 {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		position: absolute;
+		@include rfs(144px, bottom);
+		@include rfs(861px, left);
+	}
+	.shape-4 {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		position: absolute;
+		@include rfs(87px, bottom);
+		@include rfs(67px, right);
+	}
+	.shape-5 {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		position: absolute;
+		@include rfs(153px, top);
+		@include rfs(58px, right);
+	}
+
+	.shape-6 {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		position: absolute;
+		@include rfs(122px, top);
+		@include rfs(830px, right);
+	}
+
+	.#{$prefix}content-wrapper {
+		z-index: 1;
+		.#{$prefix}form {
+			.input-group {
+				input {
+					@include rfs(10px 15px, padding);
+				}
+			}
+		}
+		@include rfs(40px, gap);
+		h1 {
+			@include rfs(60px, font-size);
+
+			.#{$prefix}line {
+				position: relative;
+				&:after {
+					width: 100%;
+					height: 10px;
+					position: absolute;
+					left: 0;
+					bottom: -5px;
+					background-color: $secondary;
+					@include rfs(5px, border-radius);
+					content: "";
+				}
+			}
+		}
+	}
+
+	.input-group
+		> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(
+			.invalid-feedback
+		) {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+}
+
+@include media-breakpoint-down(xxl) {
+	.#{$prefix}banner {
+		.shape-1 {
+			display: flex;
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.#{$prefix}banner {
+		.shape-1 {
+			width: 100px;
+			height: auto;
+			bottom: 80px;
+		}
+		.shape-2 {
+			width: 62px;
+			height: auto;
+			bottom: 80px;
+		}
+
+		.shape-3 {
+			width: 60px;
+			bottom: 220px;
+			left: 600px;
+		}
+		.shape-4 {
+			width: 50px;
+			bottom: 220px;
+			right: 67px;
+		}
+		.shape-5 {
+			width: 60px;
+			bottom: 200px;
+			right: 70px;
+		}
+		.shape-6 {
+			width: 80px;
+			bottom: 300px;
+			right: 500px;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.#{$prefix}banner {
+		.shape-1 {
+			width: 100px;
+			height: auto;
+			bottom: 25px;
+		}
+		.shape-2 {
+			width: 62px;
+			height: auto;
+			bottom: 22px;
+		}
+
+		.shape-3 {
+			width: 60px;
+			bottom: 220px;
+			left: 600px;
+		}
+		.shape-4 {
+			width: 50px;
+			bottom: 220px;
+			right: 67px;
+		}
+		.shape-5 {
+			width: 60px;
+			bottom: 200px;
+			right: 70px;
+		}
+		.shape-6 {
+			width: 80px;
+			bottom: 300px;
+			right: 300px;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.#{$prefix}banner {
+		.shape-1 {
+			width: 100px;
+			height: auto;
+			bottom: 20px;
+		}
+		.shape-2 {
+			width: 62px;
+			height: auto;
+			bottom: 15px;
+			left: 550px;
+		}
+
+		.shape-3 {
+			width: 60px;
+			bottom: 220px;
+			left: 80px;
+		}
+		.shape-4 {
+			width: 50px;
+			bottom: 220px;
+			right: 67px;
+		}
+		.shape-5 {
+			width: 60px;
+			top: 500px;
+			right: 70px;
+		}
+		.shape-6 {
+			width: 80px;
+			top: 400px;
+			right: 500px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}banner {
+		.shape-1 {
+			width: 60px;
+			height: auto;
+			bottom: 20px;
+		}
+		.shape-2 {
+			width: 45px;
+			height: auto;
+			bottom: 8px;
+			left: 250px;
+		}
+
+		.shape-3 {
+			width: 50px;
+			bottom: 130px;
+			left: 20px;
+		}
+		.shape-4 {
+			width: 50px;
+			bottom: 100px;
+			right: 30px;
+		}
+		.shape-5 {
+			width: 50px;
+			top: 400px;
+			right: 30px;
+		}
+		.shape-6 {
+			width: 80px;
+			top: 400px;
+			right: 100px;
+		}
+		.#{$prefix}content-wrapper {
+			gap: 10px;
+			margin-top: 30px;
+			.#{$prefix}form {
+				.input-group {
+					position: relative;
+					flex-direction: column;
+					gap: 10px;
+					input {
+						@include rfs(10px 15px, padding);
+					}
+				}
+			}
+			h1 {
+				.#{$prefix}line {
+					&:after {
+						height: 8px;
+					}
+				}
+			}
+		}
+	}
+}

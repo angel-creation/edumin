@@ -1,0 +1,152 @@
+.#{$prefix}why-choose-edumin {
+	background-color: rgba(70, 41, 90, 0.1);
+	position: relative;
+
+	.shape-1 {
+		@include rfs(171px, width);
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.shape-2 {
+		width: 29px;
+		position: absolute;
+		@include rfs(107px, top);
+		@include rfs(192px, left);
+	}
+	.shape-3 {
+		width: 44px;
+		position: absolute;
+		@include rfs(134px, top);
+		@include rfs(363px, left);
+	}
+	.shape-4 {
+		position: absolute;
+		@include rfs(86px, top);
+		@include rfs(192px, right);
+	}
+	.shape-5 {
+		position: absolute;
+		@include rfs(56px, top);
+		@include rfs(70px, right);
+	}
+
+	.#{$prefix}why-choose-wrapper {
+		@include rfs(20px, padding);
+		display: flex;
+		flex-flow: row;
+		width: 100%;
+
+		@include rfs(20px, gap);
+		.#{$prefix}icon-wrap {
+			@include rfs(150px, width);
+			@include rfs(150px, height);
+			background-color: $primary-dark;
+			@include rfs(5px, border-radius);
+			figure {
+				@include rfs(100px, width);
+				@include rfs(100px, height);
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		&-content {
+			flex-grow: 1;
+			@include rfs(10px, gap);
+			h3 {
+				color: $text;
+				@include font-size(20px);
+
+				font-weight: 800 !important;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xxl) {
+	.#{$prefix}why-choose-edumin {
+		.shape-1 {
+			width: 111px;
+			height: auto;
+			img {
+				width: 100%;
+			}
+		}
+		.shape-2 {
+			display: none;
+		}
+		.shape-3 {
+			display: none;
+		}
+		.shape-4 {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.#{$prefix}why-choose-edumin {
+		.shape-1 {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+	.shape-3 {
+		display: none;
+	}
+	.shape-4 {
+		display: none;
+	}
+
+	.#{$prefix}why-choose-edumin {
+		.grid {
+			gap: 10px;
+		}
+		.#{$prefix}why-choose-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix} .shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+	.shape-3 {
+		display: none;
+	}
+	.shape-4 {
+		display: none;
+	}
+
+	.#{$prefix}why-choose-edumin {
+		.grid {
+			gap: 10px;
+		}
+		.#{$prefix}why-choose-wrapper {
+			@include rfs(10px, padding);
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}

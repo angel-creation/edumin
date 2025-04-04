@@ -1,0 +1,81 @@
+.#{$prefix}company-arround-the-word {
+	width: 100%;
+	height: 100%;
+	background-color: $primary;
+
+	h2 {
+		@include rfs(48px, font-size);
+		color: $white;
+	}
+
+	.#{$prefix}company-icon-main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		@include rfs(25px, gap);
+		.#{$prefix}company-icon-wrapper {
+			@include rfs(304px, width);
+			@include rfs(100px, height);
+			background-color: rgba($color: $white, $alpha: 0.1);
+			figure {
+				img {
+					opacity: 75%;
+					transition: 0.5s all;
+
+					&:hover {
+						opacity: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xl) {
+	.#{$prefix}company-arround-the-word {
+		.#{$prefix}company-icon-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			@include rfs(10px, gap);
+
+			.#{$prefix}company-icon-wrapper {
+				gap: 10px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.#{$prefix}company-arround-the-word {
+		.#{$prefix}company-icon-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			@include rfs(10px, gap);
+			flex-direction: column;
+			.#{$prefix}company-icon-wrapper {
+				gap: 10px;
+				width: 100%;
+				height: 100%;
+				padding: 10px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}company-arround-the-word {
+		.#{$prefix}ed-main-heading-wrapper {
+			@include rfs(10px margin-bottom);
+		}
+		.#{$prefix}company-icon-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			@include rfs(10px, gap);
+			flex-direction: column;
+			.#{$prefix}company-icon-wrapper {
+				gap: 10px;
+				width: 100%;
+				height: 100%;
+				padding: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Edumin</title>
+		<meta name="description" content="Edumin">
+		<meta name="theme-color" content="#46295A" />
+		<link rel="stylesheet" href="assets/css/main.min.css">
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+	</head>
+	<body>
+
+		<!--header strat-->
+		<header class="ed-header w-100 ">
+			<div class="container">
+				<div class="ed-header-wrapper d-flex flex-wrap justify-content-between align-items-center">
+					<a href="index.html" aria-label="logo"><svg width="124" height="28" viewBox="0 0 124 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.926492 27V1.54545H18.6751V6.5419H7.07884V11.7621H17.7678V16.771H7.07884V22.0036H18.6751V27H0.926492ZM29.5007 27.2734C28.0921 27.2734 26.8119 26.9089 25.6602 26.1797C24.5084 25.4505 23.5887 24.3568 22.9009 22.8984C22.2132 21.4401 21.8693 19.6296 21.8693 17.467C21.8693 15.2215 22.2256 13.3737 22.9382 11.9237C23.6508 10.4736 24.583 9.40057 25.7347 8.70454C26.8948 8.00852 28.1418 7.66051 29.4759 7.66051C30.4785 7.66051 31.3361 7.83452 32.0487 8.18253C32.7612 8.52225 33.3496 8.96141 33.8136 9.5C34.2776 10.0386 34.6297 10.5979 34.87 11.1779H34.9943V1.54545H41.0721V27H35.0565V23.9052H34.87C34.6132 24.4935 34.2486 25.0445 33.7763 25.5582C33.304 26.072 32.7115 26.4863 31.9989 26.8011C31.2946 27.116 30.4619 27.2734 29.5007 27.2734ZM31.6136 22.538C32.3511 22.538 32.9808 22.3308 33.5028 21.9165C34.0249 21.494 34.4267 20.9015 34.7085 20.1392C34.9902 19.3769 35.131 18.482 35.131 17.4545C35.131 16.4105 34.9902 15.5115 34.7085 14.7575C34.435 14.0034 34.0331 13.4234 33.5028 13.0174C32.9808 12.6114 32.3511 12.4084 31.6136 12.4084C30.8596 12.4084 30.2216 12.6155 29.6996 13.0298C29.1776 13.4441 28.7798 14.0283 28.5064 14.7823C28.2412 15.5363 28.1087 16.4271 28.1087 17.4545C28.1087 18.482 28.2454 19.3769 28.5188 20.1392C28.7923 20.9015 29.1858 21.494 29.6996 21.9165C30.2216 22.3308 30.8596 22.538 31.6136 22.538ZM57.2329 18.7596V7.90909H63.2982V27H57.5063V23.4453H57.3074C56.8849 24.6136 56.164 25.5417 55.1448 26.2294C54.1339 26.9089 52.9117 27.2486 51.4782 27.2486C50.1773 27.2486 49.0339 26.9503 48.0479 26.3537C47.0618 25.7571 46.2954 24.9244 45.7485 23.8555C45.2016 22.7783 44.924 21.5188 44.9157 20.0771V7.90909H50.9935V18.8839C51.0018 19.9196 51.2752 20.7358 51.8138 21.3324C52.3524 21.929 53.0857 22.2273 54.0138 22.2273C54.6186 22.2273 55.1614 22.0947 55.642 21.8295C56.1308 21.5561 56.5161 21.1625 56.7979 20.6488C57.0879 20.1268 57.2329 19.497 57.2329 18.7596ZM67.7385 27V7.90909H71.3056V11.0163H71.5417C71.9395 9.96402 72.5899 9.1437 73.4931 8.5554C74.3962 7.95881 75.4776 7.66051 76.737 7.66051C78.0131 7.66051 79.082 7.95881 79.9437 8.5554C80.8137 9.15199 81.4559 9.9723 81.8702 11.0163H82.0691C82.5248 9.99716 83.2498 9.18513 84.2441 8.58025C85.2385 7.96709 86.4234 7.66051 87.7988 7.66051C89.5306 7.66051 90.9434 8.20324 92.0371 9.28871C93.1391 10.3742 93.6902 12.0107 93.6902 14.1982V27H89.9739V14.5462C89.9739 13.2536 89.6217 12.3172 88.9174 11.7372C88.2131 11.1572 87.3721 10.8672 86.3944 10.8672C85.1846 10.8672 84.2441 11.2401 83.573 11.9858C82.9018 12.7232 82.5662 13.672 82.5662 14.832V27H78.8624V14.31C78.8624 13.2743 78.5392 12.4415 77.8929 11.8118C77.2466 11.1821 76.4056 10.8672 75.3699 10.8672C74.6655 10.8672 74.0151 11.0536 73.4185 11.4265C72.8302 11.7911 72.3538 12.3007 71.9892 12.9553C71.6329 13.6098 71.4547 14.368 71.4547 15.2298V27H67.7385ZM98.6711 27V7.90909H102.387V27H98.6711ZM100.548 4.96342C99.9015 4.96342 99.3464 4.74799 98.8824 4.31711C98.4266 3.87796 98.1988 3.35594 98.1988 2.75106C98.1988 2.1379 98.4266 1.61588 98.8824 1.18501C99.3464 0.745856 99.9015 0.526278 100.548 0.526278C101.194 0.526278 101.745 0.745856 102.201 1.18501C102.665 1.61588 102.897 2.1379 102.897 2.75106C102.897 3.35594 102.665 3.87796 102.201 4.31711C101.745 4.74799 101.194 4.96342 100.548 4.96342ZM111.103 15.6648V27H107.387V7.90909H110.954V11.0163H111.19C111.629 10.0054 112.317 9.19342 113.253 8.58025C114.198 7.96709 115.387 7.66051 116.82 7.66051C118.121 7.66051 119.261 7.93395 120.238 8.48082C121.216 9.01941 121.974 9.82315 122.513 10.892C123.052 11.9609 123.321 13.2826 123.321 14.8569V27H119.605V15.3043C119.605 13.9206 119.244 12.8393 118.523 12.0604C117.802 11.2732 116.812 10.8796 115.553 10.8796C114.691 10.8796 113.925 11.0661 113.253 11.4389C112.59 11.8118 112.064 12.3587 111.675 13.0795C111.294 13.7921 111.103 14.6539 111.103 15.6648Z" fill="black" />
+						</svg>
+					</a>
+					<div class="ed-navbar-menu-wrapper d-xxl-flex d-xl-flex d-lg-flex d-md-none d-sm-none d-none flex-wrap">
+						<ul class="d-flex flex-wrap  align-items-center">
+							<li><a href="index.html" class="text-decoration-none active">Home</a></li>
+							<li><a href="about-us.html" class="text-decoration-none">About us</a></li>
+							<li><a href="Instructor.html" class="text-decoration-none">Instructor</a></li>
+							<li><a href="courses.html" class="text-decoration-none">Courses</a></li>
+							<li><a href="testimonials.html" class="text-decoration-none">Testimonials</a></li>
+							<li><a href="blog.html" class="text-decoration-none">Blog</a></li>
+							<li><a href="contactus.html" class="text-decoration-none">Contact us</a></li>
+						</ul>
+						<a href="#" class="btn d-xxl-flex d-xl-flex d-lg-flex d-md-none d-sm-none d-none">Start free trial</a>
+					</div>
+					<button class="d-flex justify-content-center d-xxl-none d-xl-none d-lg-none d-md-flex d-sm-flex d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!--header end-->
+		<main>
+			<!--start banner-->
+			<section class="ed-banner">
+				<span class="main-shape">
+					<img src="assets/media/banner-background-main-shape.webp" width="379" height="778" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-1">
+					<img src="assets/media/banner-shape-1.webp" width="138" height="39" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-2">
+					<img src="assets/media/banner-shape-2.webp" width="72" height="75" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-3">
+					<img src="assets/media/banner-shape-3.webp" width="70" height="111" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-4">
+					<img src="assets/media/banner-shape-4.webp" width="74" height="122" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-5">
+					<img src="assets/media/banner-shape-5.webp" width="71" height="54" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-6">
+					<img src="assets/media/banner-shape-6.webp" width="118" height="73" class="img-fluid" alt="Edumin">
+				</span>
+				<div class="container">
+					<div class="grid">
+						<div class="ed-content-wrapper w-100 h-100 d-flex flex-column justify-content-center g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<h1 class="d-flex flex-column "> <span class="w-100">Classical </span> <span> <span class="text-primary ed-line"> education </span> for the future </span></h1>
+							<p>It is long established fact that reader distracted by the readable content.</p>
+							<form action="" class="ed-form bg-white  rounded h-auto">
+								<div class="input-group ">
+									<input type="email" class="form-control border-0" placeholder="Enter your mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn" type="button" id="button-addon2">Get Started Now</button>
+								</div>
+							</form>
+						</div>
+						<div class="g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0 ed-img-wrapper">
+								<img src="assets/media/banner-img.webp" width="787" height="795" class="img-fluid" alt="Edumin">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end banner-->
+
+			<!--strat about edumin-->
+			<section class="ed-about-edumin bg-primary bg-opacity-10 ">
+				<span class="shape-1">
+					<img src="assets/media/about-edumin-shape-1.webp" width="324" height="650" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-2">
+					<img src="assets/media/about-edumin-shape-2.webp" width="71" height="172" class="img-fluid" alt="Edumin">
+				</span>
+
+				<div class="container">
+					<div class="grid">
+						<div class="g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-12 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/about-edumin.webp" width="810" height="792" class="img-fluid" alt="Edumin">
+							</figure>
+						</div>
+						<div class="ed-content-wrapper w-100 h-100 d-flex flex-column justify-content-center  g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-12 g-col-sm-12 g-col-12">
+							<div class="ed-main-heading-wrapper mb-0 d-flex flex-column ">
+								<span class="ed-sub-heading">About edumim</span>
+								<h2>The place where you can <span class="ed-line">achieve</span></h2>
+							</div>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+
+							<div class="ed-our-vision-wrapper d-flex align-items-center">
+								<div class="ed-icon-wrapper d-flex rounded justify-content-center align-items-center">
+									<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_702_1375)">
+											<path d="M25.8322 12.2445H22.9656L25.7656 7.24451C25.8989 7.04451 25.8989 6.77787 25.7656 6.57787C25.6322 6.37787 25.4322 6.24451 25.1656 6.24451H21.1656C20.8989 6.24451 20.6989 6.37787 20.5656 6.57787L15.8988 15.2445C15.7655 15.4445 15.7655 15.7111 15.8988 15.9111C16.0322 16.1111 16.2322 16.2445 16.4988 16.2445H18.8988L15.8988 24.0445C15.7655 24.3111 15.8988 24.7111 16.1655 24.8445C16.2988 24.9111 16.3655 24.9111 16.4988 24.9111C16.6988 24.9111 16.8988 24.8445 17.0322 24.7111L26.3656 13.3778C26.4989 13.1778 26.5656 12.9111 26.4322 12.6444C26.2988 12.3777 26.0988 12.2445 25.8322 12.2445ZM18.5655 20.5779L20.4321 15.7779C20.4988 15.5779 20.4988 15.3779 20.3655 15.1779C20.2321 15.0445 20.0321 14.9112 19.8321 14.9112H17.6321L21.5655 7.57787H24.0321L21.2321 12.5779C21.0988 12.7779 21.0988 13.0445 21.2321 13.2445C21.3655 13.4445 21.5655 13.5779 21.8321 13.5779H24.4321L18.5655 20.5779Z" fill="#46295A" />
+											<path d="M33.7661 12.3779C33.0994 6.04451 28.0328 0.977866 21.7661 0.311147C21.3661 0.311147 20.9661 0.244507 20.4994 0.244507C20.0328 0.244507 19.6328 0.311147 19.2328 0.311147C12.9661 1.04451 7.89945 6.11115 7.23281 12.3779C6.76617 16.6445 8.29945 20.8445 11.3662 23.7779C13.0328 25.3779 14.0995 27.2445 14.4995 29.0445V36.9111C14.4995 37.3111 14.7662 37.5778 15.1662 37.5778H16.1662L17.3662 39.1778C17.8994 39.8445 18.6328 40.2445 19.4994 40.2445H21.4994C22.3661 40.2445 23.1661 39.8445 23.6328 39.1779L24.8328 37.5779H25.8328C26.2328 37.5779 26.4994 37.3112 26.4994 36.9112V29.0445C26.8328 27.2445 27.9661 25.3779 29.6328 23.7779C32.6994 20.7779 34.2328 16.6445 33.7661 12.3779ZM25.1661 30.9111H23.1661C22.7661 30.9111 22.4994 31.1778 22.4994 31.5778C22.4994 31.9778 22.7661 32.2444 23.1661 32.2444H25.1661V33.5778H21.1661C20.7661 33.5778 20.4994 33.8444 20.4994 34.2444C20.4994 34.6444 20.7661 34.9111 21.1661 34.9111H25.1661V36.2445H24.4994H16.4994H15.8328V34.9111H17.8328C18.2328 34.9111 18.4994 34.6445 18.4994 34.2445C18.4994 33.8445 18.2328 33.5779 17.8328 33.5779H15.8328V32.2445H19.8328C20.2328 32.2445 20.4994 31.9779 20.4994 31.5779C20.4994 31.1779 20.2328 30.9112 19.8328 30.9112H15.8328V29.5779H25.1662V30.9111H25.1661ZM22.5661 38.3779C22.2994 38.7112 21.8994 38.9112 21.4994 38.9112H19.4994C19.0994 38.9112 18.6994 38.7112 18.4328 38.3779L17.8328 37.5779H23.1662L22.5661 38.3779ZM28.6994 22.7779C27.0328 24.4445 25.8328 26.3112 25.2994 28.2445H15.6994C15.1661 26.3111 13.9661 24.4445 12.2994 22.7779C9.49945 20.1112 8.16609 16.3779 8.56609 12.5112C9.23273 6.84459 13.7661 2.31123 19.4327 1.64458C19.7661 1.64458 20.0994 1.57794 20.4994 1.57794C20.8994 1.57794 21.2327 1.64458 21.566 1.64458C27.2327 2.31123 31.8327 6.84459 32.4327 12.5112C32.8328 16.3779 31.4994 20.1111 28.6994 22.7779Z" fill="#46295A" />
+										</g>
+										<defs>
+											<clipPath id="clip0_702_1375">
+												<rect width="40" height="40" fill="white" transform="translate(0.5 0.244507)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="ed-our-vision-content">
+									<h3><a href="#" class="text-decoration-none">Our vision</a></h3>
+									<p>There are many variations of passages of the Lorem Ipsum available.</p>
+								</div>
+
+
+							</div>
+							<div class="ed-our-vision-wrapper d-flex align-items-center">
+								<div class="ed-icon-wrapper d-flex rounded justify-content-center align-items-center">
+									<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_702_1375)">
+											<path d="M25.8322 12.2445H22.9656L25.7656 7.24451C25.8989 7.04451 25.8989 6.77787 25.7656 6.57787C25.6322 6.37787 25.4322 6.24451 25.1656 6.24451H21.1656C20.8989 6.24451 20.6989 6.37787 20.5656 6.57787L15.8988 15.2445C15.7655 15.4445 15.7655 15.7111 15.8988 15.9111C16.0322 16.1111 16.2322 16.2445 16.4988 16.2445H18.8988L15.8988 24.0445C15.7655 24.3111 15.8988 24.7111 16.1655 24.8445C16.2988 24.9111 16.3655 24.9111 16.4988 24.9111C16.6988 24.9111 16.8988 24.8445 17.0322 24.7111L26.3656 13.3778C26.4989 13.1778 26.5656 12.9111 26.4322 12.6444C26.2988 12.3777 26.0988 12.2445 25.8322 12.2445ZM18.5655 20.5779L20.4321 15.7779C20.4988 15.5779 20.4988 15.3779 20.3655 15.1779C20.2321 15.0445 20.0321 14.9112 19.8321 14.9112H17.6321L21.5655 7.57787H24.0321L21.2321 12.5779C21.0988 12.7779 21.0988 13.0445 21.2321 13.2445C21.3655 13.4445 21.5655 13.5779 21.8321 13.5779H24.4321L18.5655 20.5779Z" fill="#46295A" />
+											<path d="M33.7661 12.3779C33.0994 6.04451 28.0328 0.977866 21.7661 0.311147C21.3661 0.311147 20.9661 0.244507 20.4994 0.244507C20.0328 0.244507 19.6328 0.311147 19.2328 0.311147C12.9661 1.04451 7.89945 6.11115 7.23281 12.3779C6.76617 16.6445 8.29945 20.8445 11.3662 23.7779C13.0328 25.3779 14.0995 27.2445 14.4995 29.0445V36.9111C14.4995 37.3111 14.7662 37.5778 15.1662 37.5778H16.1662L17.3662 39.1778C17.8994 39.8445 18.6328 40.2445 19.4994 40.2445H21.4994C22.3661 40.2445 23.1661 39.8445 23.6328 39.1779L24.8328 37.5779H25.8328C26.2328 37.5779 26.4994 37.3112 26.4994 36.9112V29.0445C26.8328 27.2445 27.9661 25.3779 29.6328 23.7779C32.6994 20.7779 34.2328 16.6445 33.7661 12.3779ZM25.1661 30.9111H23.1661C22.7661 30.9111 22.4994 31.1778 22.4994 31.5778C22.4994 31.9778 22.7661 32.2444 23.1661 32.2444H25.1661V33.5778H21.1661C20.7661 33.5778 20.4994 33.8444 20.4994 34.2444C20.4994 34.6444 20.7661 34.9111 21.1661 34.9111H25.1661V36.2445H24.4994H16.4994H15.8328V34.9111H17.8328C18.2328 34.9111 18.4994 34.6445 18.4994 34.2445C18.4994 33.8445 18.2328 33.5779 17.8328 33.5779H15.8328V32.2445H19.8328C20.2328 32.2445 20.4994 31.9779 20.4994 31.5779C20.4994 31.1779 20.2328 30.9112 19.8328 30.9112H15.8328V29.5779H25.1662V30.9111H25.1661ZM22.5661 38.3779C22.2994 38.7112 21.8994 38.9112 21.4994 38.9112H19.4994C19.0994 38.9112 18.6994 38.7112 18.4328 38.3779L17.8328 37.5779H23.1662L22.5661 38.3779ZM28.6994 22.7779C27.0328 24.4445 25.8328 26.3112 25.2994 28.2445H15.6994C15.1661 26.3111 13.9661 24.4445 12.2994 22.7779C9.49945 20.1112 8.16609 16.3779 8.56609 12.5112C9.23273 6.84459 13.7661 2.31123 19.4327 1.64458C19.7661 1.64458 20.0994 1.57794 20.4994 1.57794C20.8994 1.57794 21.2327 1.64458 21.566 1.64458C27.2327 2.31123 31.8327 6.84459 32.4327 12.5112C32.8328 16.3779 31.4994 20.1111 28.6994 22.7779Z" fill="#46295A" />
+										</g>
+										<defs>
+											<clipPath id="clip0_702_1375">
+												<rect width="40" height="40" fill="white" transform="translate(0.5 0.244507)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="ed-our-vision-content">
+									<h3><a href="#" class="text-decoration-none">Our vision</a></h3>
+									<p>There are many variations of passages of the Lorem Ipsum available.</p>
+								</div>
+
+
+							</div>
+
+							<div class="ed-btn-wrapper">
+								<a href="#" class="btn ">Read More</a>
+							</div>
+						</div>
+					</div>
+			</section>
+			<!--end about edumin-->
+
+			<!--start company arround the word-->
+			<section class="ed-company-arround-the-word">
+				<div class="container text-center">
+					<div class="ed-main-heading-wrapper d-flex align-items-center text-center justify-content-center ">
+						<h2>Trusted by 1k+ company arround the <span class="ed-line text-secondary">world!</span></h2>
+					</div>
+					<div class="ed-company-icon-main-wrapper ">
+						<div class="ed-company-icon-wrapper w-100 d-flex justify-content-center align-items-center">
+
+							<figure class="mb-0  d-flex justify-content-center align-items-center">
+								<img src="assets/media/company-icon-1.webp" width="200" height="29" class="img-fluid" alt="Edumin">
+							</figure>
+
+						</div>
+						<div class="ed-company-icon-wrapper w-100 d-flex justify-content-center align-items-center">
+							<figure class="mb-0 w-100 h-100 d-flex justify-content-center align-items-center">
+								<img src="assets/media/company-icon-2.webp" width="205" height="51" class="img-fluid" alt="Edumin">
+							</figure>
+						</div>
+						<div class="ed-company-icon-wrapper w-100 d-flex justify-content-center align-items-center">
+							<figure class="mb-0 w-100 h-100 d-flex justify-content-center align-items-center">
+								<img src="assets/media/company-icon-3.webp" width="170" height="50" class="img-fluid" alt="Edumin">
+							</figure>
+						</div>
+						<div class="ed-company-icon-wrapper w-100 d-flex justify-content-center align-items-center">
+							<figure class="mb-0 w-100 h-100 d-flex justify-content-center align-items-center">
+								<img src="assets/media/company-icon-4.webp" width="172" height="50" class="img-fluid" alt="Edumin">
+							</figure>
+						</div>
+						<div class="ed-company-icon-wrapper w-100 d-flex justify-content-center align-items-center">
+							<figure class="mb-0 w-100 h-100 d-flex justify-content-center align-items-center">
+								<img src="assets/media/company-icon-5.webp" width="173" height="50" class="img-fluid" alt="Edumin">
+							</figure>
+						</div>
+					</div>
+			</section>
+			<!--end company arround the word-->
+
+			<!-- start why choose edumin-->
+			<section class="ed-why-choose-edumin">
+				<span class="shape-1">
+					<img src="assets/media/why-choose-background-shape-1.webp" width="171" height="140" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-2">
+					<img src="assets/media/why-choose-background-shape-2.webp" width="29" height="22" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-3">
+					<img src="assets/media/why-choose-background-shape-3.webp" width="44" height="43" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-4">
+					<img src="assets/media/why-choose-background-shape-4.webp" width="95" height="95" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-5">
+					<img src="assets/media/why-choose-background-shape-5.webp" width="46" height="45" class="img-fluid" alt="Edumin">
+				</span>
+				<div class="container">
+					<div class="ed-main-heading-wrapper d-flex flex-column justify-content-center align-items-center">
+						<span class="ed-sub-heading">Core features</span>
+						<h2>Why choose <span class="ed-line">edumim</span></h2>
+					</div>
+					<div class="grid">
+						<div class="ed-why-choose-wrapper   bg-primary-100 rounded g-col-xxl-4 g-col-xl-4 4 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<div class="ed-icon-wrap d-flex justify-content-center align-items-center flex-shrink-0">
+								<figure class="mb-0 d-flex rounded   justify-content-center align-items-center flex-shrink-0">
+									<img src="assets/media/why-choose-icon-1.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+								</figure>
+							</div>
+							<div class="ed-why-choose-wrapper-content d-flex flex-column flex-wrap justify-content-center">
+								<h3>Learn more anywhere</h3>
+								<P>Learn from anywhere in world on desktop, mobile or tablet with an Internet connection.</P>
+							</div>
+						</div>
+						<div class="ed-why-choose-wrapper bg-primary-100 rounded g-col-xxl-4 g-col-xl-4 4 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<div class="ed-icon-wrap d-flex justify-content-center align-items-center flex-shrink-0">
+								<figure class="mb-0 d-flex rounded  justify-content-center align-items-center flex-shrink-0">
+									<img src="assets/media/why-choose-icon-2.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+								</figure>
+							</div>
+							<div class="ed-why-choose-wrapper-content d-flex flex-column flex-wrap justify-content-center">
+								<h3>Expert instructor</h3>
+								<P>Learn from anywhere in world on desktop, mobile or tablet with an Internet connection.</P>
+							</div>
+						</div>
+						<div class="ed-why-choose-wrapper bg-primary-100 rounded g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<div class="ed-icon-wrap d-flex justify-content-center align-items-center flex-shrink-0">
+								<figure class="mb-0 d-flex rounded  justify-content-center align-items-center flex-shrink-0">
+									<img src="assets/media/why-choose-icon-3.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+								</figure>
+							</div>
+							<div class="ed-why-choose-wrapper-content d-flex flex-column flex-wrap justify-content-center">
+								<h3>24/7 Strong support</h3>
+								<P>Learn from anywhere in world on desktop, mobile or tablet with an Internet connection.</P>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- start why choose edumin-->
+
+			<!--start courses-->
+			<section class="ed-courses">
+				<div class="background-shapes">
+					<span class="shape-1"><img src="assets/media/courses-background-icon-1.webp" width="121" height="157" class="img-fluid" alt="Edumin"></span>
+					<span class="shape-2"><img src="assets/media/courses-background-icon-2.webp" width="121" height="157" class="img-fluid" alt="Edumin"></span>
+					<span class="shape-3"><img src="assets/media/courses-background-icon-3.webp" width="121" height="157" class="img-fluid" alt="Edumin"></span>
+				</div>
+				<div class="container">
+					<div class="ed-main-heading-wrapper text-center d-flex justify-content-center  flex-column align-items-center">
+						<span class="ed-sub-heading">Popular courses</span>
+						<h2>Choose our top  <span class="ed-link-wrapper"> courses</span></h2>
+					</div>
+					<div class="grid">
+						<div class="ed-courses-wrapper d-flex flex-column w-100 h-100 g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-4 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/courses-1.webp" width="481" height="300" class="img-fluid w-100 h-100" alt="Edumin">
+								<span class="">Development</span>
+							</figure>
+							<span class="ed-price-heading">$29.07</span>
+							<h3 class="ed-courses-heading"> <a href="#" class="text-decoration-none ed-courses-heading">Financial security thinking and principles theory</a></h3>
+							<div class="ed-icon-wrapper d-flex align-items-center">
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.3 20.489C11.4 20.8223 11.5377 21.1683 11.713 21.527C11.8883 21.8857 12.0673 22.2063 12.25 22.489H5C4.45 22.489 3.97933 22.2933 3.588 21.902C3.19667 21.5107 3.00067 21.0397 3 20.489V4.48901C3 3.93901 3.196 3.46835 3.588 3.07701C3.98 2.68568 4.45067 2.48968 5 2.48901H17C17.55 2.48901 18.021 2.68501 18.413 3.07701C18.805 3.46901 19.0007 3.93968 19 4.48901V11.589C18.7 11.5557 18.3667 11.539 18 11.539C17.6333 11.539 17.3 11.5557 17 11.589V4.48901H12V11.489L9.5 9.98901L7 11.489V4.48901H5V20.489H11.3ZM18 23.489C16.6167 23.489 15.4377 23.0013 14.463 22.026C13.4883 21.0507 13.0007 19.8717 13 18.489C12.9993 17.1063 13.487 15.9273 14.463 14.952C15.439 13.9767 16.618 13.489 18 13.489C19.382 13.489 20.5613 13.9767 21.538 14.952C22.5147 15.9273 23.002 17.1063 23 18.489C22.998 19.8717 22.5103 21.051 21.537 22.027C20.5637 23.003 19.3847 23.4903 18 23.489ZM16.75 20.989L20.75 18.489L16.75 15.989V20.989ZM11.3 4.48901H5H17H11H11.3Z" fill="#626262" />
+									</svg>
+									2 Lessons</span>
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.36401C9.99747 2.36401 8.0399 2.95783 6.37486 4.07038C4.70981 5.18293 3.41206 6.76424 2.64572 8.61434C1.87939 10.4644 1.67888 12.5002 2.06955 14.4643C2.46023 16.4284 3.42454 18.2325 4.84055 19.6485C6.25656 21.0645 8.06066 22.0288 10.0247 22.4195C11.9888 22.8101 14.0246 22.6096 15.8747 21.8433C17.7248 21.077 19.3061 19.7792 20.4186 18.1142C21.5312 16.4491 22.125 14.4915 22.125 12.489C22.122 9.80461 21.0543 7.23101 19.1562 5.33285C17.258 3.43469 14.6844 2.36699 12 2.36401ZM12 20.364C10.4425 20.364 8.91993 19.9022 7.62489 19.0368C6.32985 18.1715 5.32049 16.9416 4.72445 15.5026C4.12841 14.0637 3.97246 12.4803 4.27632 10.9527C4.58018 9.42508 5.3302 8.02189 6.43154 6.92055C7.53288 5.81921 8.93607 5.06919 10.4637 4.76533C11.9913 4.46147 13.5747 4.61742 15.0136 5.21346C16.4526 5.8095 17.6825 6.81886 18.5478 8.1139C19.4131 9.40894 19.875 10.9315 19.875 12.489C19.8728 14.5769 19.0424 16.5786 17.566 18.055C16.0896 19.5314 14.0879 20.3618 12 20.364ZM18.375 12.489C18.375 12.7874 18.2565 13.0735 18.0455 13.2845C17.8345 13.4955 17.5484 13.614 17.25 13.614H12C11.7016 13.614 11.4155 13.4955 11.2045 13.2845C10.9935 13.0735 10.875 12.7874 10.875 12.489V7.23901C10.875 6.94065 10.9935 6.6545 11.2045 6.44352C11.4155 6.23254 11.7016 6.11401 12 6.11401C12.2984 6.11401 12.5845 6.23254 12.7955 6.44352C13.0065 6.6545 13.125 6.94065 13.125 7.23901V11.364H17.25C17.5484 11.364 17.8345 11.4825 18.0455 11.6935C18.2565 11.9045 18.375 12.1906 18.375 12.489Z" fill="#626262" />
+									</svg>
+
+									4h 30m</span>
+							</div>
+						</div>
+						<div class="ed-courses-wrapper d-flex flex-column w-100 h-100 g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-4 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/courses-2.webp" width="481" height="300" class="img-fluid w-100 h-100" alt="Edumin">
+								<span class="">Art & Design</span>
+							</figure>
+							<span class="ed-price-heading">$29.07</span>
+							<h3 class="ed-courses-heading"> <a href="#" class="text-decoration-none ed-courses-heading">Basic fundamentals of interior & graphics design</a></h3>
+							<div class="ed-icon-wrapper d-flex align-items-center">
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.3 20.489C11.4 20.8223 11.5377 21.1683 11.713 21.527C11.8883 21.8857 12.0673 22.2063 12.25 22.489H5C4.45 22.489 3.97933 22.2933 3.588 21.902C3.19667 21.5107 3.00067 21.0397 3 20.489V4.48901C3 3.93901 3.196 3.46835 3.588 3.07701C3.98 2.68568 4.45067 2.48968 5 2.48901H17C17.55 2.48901 18.021 2.68501 18.413 3.07701C18.805 3.46901 19.0007 3.93968 19 4.48901V11.589C18.7 11.5557 18.3667 11.539 18 11.539C17.6333 11.539 17.3 11.5557 17 11.589V4.48901H12V11.489L9.5 9.98901L7 11.489V4.48901H5V20.489H11.3ZM18 23.489C16.6167 23.489 15.4377 23.0013 14.463 22.026C13.4883 21.0507 13.0007 19.8717 13 18.489C12.9993 17.1063 13.487 15.9273 14.463 14.952C15.439 13.9767 16.618 13.489 18 13.489C19.382 13.489 20.5613 13.9767 21.538 14.952C22.5147 15.9273 23.002 17.1063 23 18.489C22.998 19.8717 22.5103 21.051 21.537 22.027C20.5637 23.003 19.3847 23.4903 18 23.489ZM16.75 20.989L20.75 18.489L16.75 15.989V20.989ZM11.3 4.48901H5H17H11H11.3Z" fill="#626262" />
+									</svg>
+									2 Lessons</span>
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.36401C9.99747 2.36401 8.0399 2.95783 6.37486 4.07038C4.70981 5.18293 3.41206 6.76424 2.64572 8.61434C1.87939 10.4644 1.67888 12.5002 2.06955 14.4643C2.46023 16.4284 3.42454 18.2325 4.84055 19.6485C6.25656 21.0645 8.06066 22.0288 10.0247 22.4195C11.9888 22.8101 14.0246 22.6096 15.8747 21.8433C17.7248 21.077 19.3061 19.7792 20.4186 18.1142C21.5312 16.4491 22.125 14.4915 22.125 12.489C22.122 9.80461 21.0543 7.23101 19.1562 5.33285C17.258 3.43469 14.6844 2.36699 12 2.36401ZM12 20.364C10.4425 20.364 8.91993 19.9022 7.62489 19.0368C6.32985 18.1715 5.32049 16.9416 4.72445 15.5026C4.12841 14.0637 3.97246 12.4803 4.27632 10.9527C4.58018 9.42508 5.3302 8.02189 6.43154 6.92055C7.53288 5.81921 8.93607 5.06919 10.4637 4.76533C11.9913 4.46147 13.5747 4.61742 15.0136 5.21346C16.4526 5.8095 17.6825 6.81886 18.5478 8.1139C19.4131 9.40894 19.875 10.9315 19.875 12.489C19.8728 14.5769 19.0424 16.5786 17.566 18.055C16.0896 19.5314 14.0879 20.3618 12 20.364ZM18.375 12.489C18.375 12.7874 18.2565 13.0735 18.0455 13.2845C17.8345 13.4955 17.5484 13.614 17.25 13.614H12C11.7016 13.614 11.4155 13.4955 11.2045 13.2845C10.9935 13.0735 10.875 12.7874 10.875 12.489V7.23901C10.875 6.94065 10.9935 6.6545 11.2045 6.44352C11.4155 6.23254 11.7016 6.11401 12 6.11401C12.2984 6.11401 12.5845 6.23254 12.7955 6.44352C13.0065 6.6545 13.125 6.94065 13.125 7.23901V11.364H17.25C17.5484 11.364 17.8345 11.4825 18.0455 11.6935C18.2565 11.9045 18.375 12.1906 18.375 12.489Z" fill="#626262" />
+									</svg>
+
+									4h 30m</span>
+							</div>
+						</div>
+						<div class="ed-courses-wrapper d-flex flex-column w-100 h-100 g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-4 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/courses-3.webp" width="481" height="300" class="img-fluid w-100 h-100" alt="Edumin">
+								<span class="">Art & Design</span>
+							</figure>
+							<span class="ed-price-heading">$29.07</span>
+							<h3 class="ed-courses-heading"> <a href="#" class="ed-courses-heading text-decoration-none">Increasing engagement with instagram & facebook</a></h3>
+							<div class="ed-icon-wrapper d-flex align-items-center">
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.3 20.489C11.4 20.8223 11.5377 21.1683 11.713 21.527C11.8883 21.8857 12.0673 22.2063 12.25 22.489H5C4.45 22.489 3.97933 22.2933 3.588 21.902C3.19667 21.5107 3.00067 21.0397 3 20.489V4.48901C3 3.93901 3.196 3.46835 3.588 3.07701C3.98 2.68568 4.45067 2.48968 5 2.48901H17C17.55 2.48901 18.021 2.68501 18.413 3.07701C18.805 3.46901 19.0007 3.93968 19 4.48901V11.589C18.7 11.5557 18.3667 11.539 18 11.539C17.6333 11.539 17.3 11.5557 17 11.589V4.48901H12V11.489L9.5 9.98901L7 11.489V4.48901H5V20.489H11.3ZM18 23.489C16.6167 23.489 15.4377 23.0013 14.463 22.026C13.4883 21.0507 13.0007 19.8717 13 18.489C12.9993 17.1063 13.487 15.9273 14.463 14.952C15.439 13.9767 16.618 13.489 18 13.489C19.382 13.489 20.5613 13.9767 21.538 14.952C22.5147 15.9273 23.002 17.1063 23 18.489C22.998 19.8717 22.5103 21.051 21.537 22.027C20.5637 23.003 19.3847 23.4903 18 23.489ZM16.75 20.989L20.75 18.489L16.75 15.989V20.989ZM11.3 4.48901H5H17H11H11.3Z" fill="#626262" />
+									</svg>
+									2 Lessons</span>
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.36401C9.99747 2.36401 8.0399 2.95783 6.37486 4.07038C4.70981 5.18293 3.41206 6.76424 2.64572 8.61434C1.87939 10.4644 1.67888 12.5002 2.06955 14.4643C2.46023 16.4284 3.42454 18.2325 4.84055 19.6485C6.25656 21.0645 8.06066 22.0288 10.0247 22.4195C11.9888 22.8101 14.0246 22.6096 15.8747 21.8433C17.7248 21.077 19.3061 19.7792 20.4186 18.1142C21.5312 16.4491 22.125 14.4915 22.125 12.489C22.122 9.80461 21.0543 7.23101 19.1562 5.33285C17.258 3.43469 14.6844 2.36699 12 2.36401ZM12 20.364C10.4425 20.364 8.91993 19.9022 7.62489 19.0368C6.32985 18.1715 5.32049 16.9416 4.72445 15.5026C4.12841 14.0637 3.97246 12.4803 4.27632 10.9527C4.58018 9.42508 5.3302 8.02189 6.43154 6.92055C7.53288 5.81921 8.93607 5.06919 10.4637 4.76533C11.9913 4.46147 13.5747 4.61742 15.0136 5.21346C16.4526 5.8095 17.6825 6.81886 18.5478 8.1139C19.4131 9.40894 19.875 10.9315 19.875 12.489C19.8728 14.5769 19.0424 16.5786 17.566 18.055C16.0896 19.5314 14.0879 20.3618 12 20.364ZM18.375 12.489C18.375 12.7874 18.2565 13.0735 18.0455 13.2845C17.8345 13.4955 17.5484 13.614 17.25 13.614H12C11.7016 13.614 11.4155 13.4955 11.2045 13.2845C10.9935 13.0735 10.875 12.7874 10.875 12.489V7.23901C10.875 6.94065 10.9935 6.6545 11.2045 6.44352C11.4155 6.23254 11.7016 6.11401 12 6.11401C12.2984 6.11401 12.5845 6.23254 12.7955 6.44352C13.0065 6.6545 13.125 6.94065 13.125 7.23901V11.364H17.25C17.5484 11.364 17.8345 11.4825 18.0455 11.6935C18.2565 11.9045 18.375 12.1906 18.375 12.489Z" fill="#626262" />
+									</svg>
+
+									4h 30m</span>
+							</div>
+						</div>
+						<div class="ed-courses-wrapper d-flex flex-column w-100 h-100 g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-4 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/courses-4.webp" width="481" height="300" class="img-fluid w-100 h-100" alt="Edumin">
+								<span class="">Art & Design</span>
+							</figure>
+							<span class="ed-price-heading">$29.07</span>
+							<h3 class="ed-courses-heading"> <a href="#" class="ed-courses-heading text-decoration-none">Basic fundamentals of interior & graphics design</a></h3>
+							<div class="ed-icon-wrapper d-flex flex-row gap-xxl-2 gap-xl-2 gap-lg-2 gap-md-2 gap-sm-1 gap-1 ">
+								<span class="d-flex d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.3 20.489C11.4 20.8223 11.5377 21.1683 11.713 21.527C11.8883 21.8857 12.0673 22.2063 12.25 22.489H5C4.45 22.489 3.97933 22.2933 3.588 21.902C3.19667 21.5107 3.00067 21.0397 3 20.489V4.48901C3 3.93901 3.196 3.46835 3.588 3.07701C3.98 2.68568 4.45067 2.48968 5 2.48901H17C17.55 2.48901 18.021 2.68501 18.413 3.07701C18.805 3.46901 19.0007 3.93968 19 4.48901V11.589C18.7 11.5557 18.3667 11.539 18 11.539C17.6333 11.539 17.3 11.5557 17 11.589V4.48901H12V11.489L9.5 9.98901L7 11.489V4.48901H5V20.489H11.3ZM18 23.489C16.6167 23.489 15.4377 23.0013 14.463 22.026C13.4883 21.0507 13.0007 19.8717 13 18.489C12.9993 17.1063 13.487 15.9273 14.463 14.952C15.439 13.9767 16.618 13.489 18 13.489C19.382 13.489 20.5613 13.9767 21.538 14.952C22.5147 15.9273 23.002 17.1063 23 18.489C22.998 19.8717 22.5103 21.051 21.537 22.027C20.5637 23.003 19.3847 23.4903 18 23.489ZM16.75 20.989L20.75 18.489L16.75 15.989V20.989ZM11.3 4.48901H5H17H11H11.3Z" fill="#626262" />
+									</svg>
+									2 Lessons</span>
+								<span class="d-flex"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.36401C9.99747 2.36401 8.0399 2.95783 6.37486 4.07038C4.70981 5.18293 3.41206 6.76424 2.64572 8.61434C1.87939 10.4644 1.67888 12.5002 2.06955 14.4643C2.46023 16.4284 3.42454 18.2325 4.84055 19.6485C6.25656 21.0645 8.06066 22.0288 10.0247 22.4195C11.9888 22.8101 14.0246 22.6096 15.8747 21.8433C17.7248 21.077 19.3061 19.7792 20.4186 18.1142C21.5312 16.4491 22.125 14.4915 22.125 12.489C22.122 9.80461 21.0543 7.23101 19.1562 5.33285C17.258 3.43469 14.6844 2.36699 12 2.36401ZM12 20.364C10.4425 20.364 8.91993 19.9022 7.62489 19.0368C6.32985 18.1715 5.32049 16.9416 4.72445 15.5026C4.12841 14.0637 3.97246 12.4803 4.27632 10.9527C4.58018 9.42508 5.3302 8.02189 6.43154 6.92055C7.53288 5.81921 8.93607 5.06919 10.4637 4.76533C11.9913 4.46147 13.5747 4.61742 15.0136 5.21346C16.4526 5.8095 17.6825 6.81886 18.5478 8.1139C19.4131 9.40894 19.875 10.9315 19.875 12.489C19.8728 14.5769 19.0424 16.5786 17.566 18.055C16.0896 19.5314 14.0879 20.3618 12 20.364ZM18.375 12.489C18.375 12.7874 18.2565 13.0735 18.0455 13.2845C17.8345 13.4955 17.5484 13.614 17.25 13.614H12C11.7016 13.614 11.4155 13.4955 11.2045 13.2845C10.9935 13.0735 10.875 12.7874 10.875 12.489V7.23901C10.875 6.94065 10.9935 6.6545 11.2045 6.44352C11.4155 6.23254 11.7016 6.11401 12 6.11401C12.2984 6.11401 12.5845 6.23254 12.7955 6.44352C13.0065 6.6545 13.125 6.94065 13.125 7.23901V11.364H17.25C17.5484 11.364 17.8345 11.4825 18.0455 11.6935C18.2565 11.9045 18.375 12.1906 18.375 12.489Z" fill="#626262" />
+									</svg>
+
+									4h 30m</span>
+							</div>
+						</div>
+						<div class="ed-courses-wrapper d-flex flex-column w-100 h-100 g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-4 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/courses-5.webp" width="481" height="300" class="img-fluid w-100 h-100" alt="Edumin">
+								<span class="">Drawing</span>
+							</figure>
+							<span class="ed-price-heading">$29.07</span>
+							<h3 class="ed-courses-heading"> <a href="#" class="ed-courses-heading text-decoration-none">Financial security thinking and principles theory</a></h3>
+							<div class="ed-icon-wrapper d-flex align-items-center">
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.3 20.489C11.4 20.8223 11.5377 21.1683 11.713 21.527C11.8883 21.8857 12.0673 22.2063 12.25 22.489H5C4.45 22.489 3.97933 22.2933 3.588 21.902C3.19667 21.5107 3.00067 21.0397 3 20.489V4.48901C3 3.93901 3.196 3.46835 3.588 3.07701C3.98 2.68568 4.45067 2.48968 5 2.48901H17C17.55 2.48901 18.021 2.68501 18.413 3.07701C18.805 3.46901 19.0007 3.93968 19 4.48901V11.589C18.7 11.5557 18.3667 11.539 18 11.539C17.6333 11.539 17.3 11.5557 17 11.589V4.48901H12V11.489L9.5 9.98901L7 11.489V4.48901H5V20.489H11.3ZM18 23.489C16.6167 23.489 15.4377 23.0013 14.463 22.026C13.4883 21.0507 13.0007 19.8717 13 18.489C12.9993 17.1063 13.487 15.9273 14.463 14.952C15.439 13.9767 16.618 13.489 18 13.489C19.382 13.489 20.5613 13.9767 21.538 14.952C22.5147 15.9273 23.002 17.1063 23 18.489C22.998 19.8717 22.5103 21.051 21.537 22.027C20.5637 23.003 19.3847 23.4903 18 23.489ZM16.75 20.989L20.75 18.489L16.75 15.989V20.989ZM11.3 4.48901H5H17H11H11.3Z" fill="#626262" />
+									</svg>
+									2 Lessons</span>
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.36401C9.99747 2.36401 8.0399 2.95783 6.37486 4.07038C4.70981 5.18293 3.41206 6.76424 2.64572 8.61434C1.87939 10.4644 1.67888 12.5002 2.06955 14.4643C2.46023 16.4284 3.42454 18.2325 4.84055 19.6485C6.25656 21.0645 8.06066 22.0288 10.0247 22.4195C11.9888 22.8101 14.0246 22.6096 15.8747 21.8433C17.7248 21.077 19.3061 19.7792 20.4186 18.1142C21.5312 16.4491 22.125 14.4915 22.125 12.489C22.122 9.80461 21.0543 7.23101 19.1562 5.33285C17.258 3.43469 14.6844 2.36699 12 2.36401ZM12 20.364C10.4425 20.364 8.91993 19.9022 7.62489 19.0368C6.32985 18.1715 5.32049 16.9416 4.72445 15.5026C4.12841 14.0637 3.97246 12.4803 4.27632 10.9527C4.58018 9.42508 5.3302 8.02189 6.43154 6.92055C7.53288 5.81921 8.93607 5.06919 10.4637 4.76533C11.9913 4.46147 13.5747 4.61742 15.0136 5.21346C16.4526 5.8095 17.6825 6.81886 18.5478 8.1139C19.4131 9.40894 19.875 10.9315 19.875 12.489C19.8728 14.5769 19.0424 16.5786 17.566 18.055C16.0896 19.5314 14.0879 20.3618 12 20.364ZM18.375 12.489C18.375 12.7874 18.2565 13.0735 18.0455 13.2845C17.8345 13.4955 17.5484 13.614 17.25 13.614H12C11.7016 13.614 11.4155 13.4955 11.2045 13.2845C10.9935 13.0735 10.875 12.7874 10.875 12.489V7.23901C10.875 6.94065 10.9935 6.6545 11.2045 6.44352C11.4155 6.23254 11.7016 6.11401 12 6.11401C12.2984 6.11401 12.5845 6.23254 12.7955 6.44352C13.0065 6.6545 13.125 6.94065 13.125 7.23901V11.364H17.25C17.5484 11.364 17.8345 11.4825 18.0455 11.6935C18.2565 11.9045 18.375 12.1906 18.375 12.489Z" fill="#626262" />
+									</svg>
+
+									4h 30m</span>
+							</div>
+						</div>
+						<div class="ed-courses-wrapper d-flex flex-column w-100 h-100 g-col-xxl-4 g-col-xl-4 g-col-lg-6 g-col-md-4 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/courses-6.webp" width="481" height="300" class="img-fluid w-100 h-100" alt="Edumin">
+								<span class="">Data science</span>
+							</figure>
+							<span class="ed-price-heading">$29.07</span>
+							<h3 class="ed-courses-heading"> <a href="#" class="ed-courses-heading text-decoration-none">Financial security thinking and principles theory</a></h3>
+							<div class="ed-icon-wrapper d-flex align-items-center">
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.3 20.489C11.4 20.8223 11.5377 21.1683 11.713 21.527C11.8883 21.8857 12.0673 22.2063 12.25 22.489H5C4.45 22.489 3.97933 22.2933 3.588 21.902C3.19667 21.5107 3.00067 21.0397 3 20.489V4.48901C3 3.93901 3.196 3.46835 3.588 3.07701C3.98 2.68568 4.45067 2.48968 5 2.48901H17C17.55 2.48901 18.021 2.68501 18.413 3.07701C18.805 3.46901 19.0007 3.93968 19 4.48901V11.589C18.7 11.5557 18.3667 11.539 18 11.539C17.6333 11.539 17.3 11.5557 17 11.589V4.48901H12V11.489L9.5 9.98901L7 11.489V4.48901H5V20.489H11.3ZM18 23.489C16.6167 23.489 15.4377 23.0013 14.463 22.026C13.4883 21.0507 13.0007 19.8717 13 18.489C12.9993 17.1063 13.487 15.9273 14.463 14.952C15.439 13.9767 16.618 13.489 18 13.489C19.382 13.489 20.5613 13.9767 21.538 14.952C22.5147 15.9273 23.002 17.1063 23 18.489C22.998 19.8717 22.5103 21.051 21.537 22.027C20.5637 23.003 19.3847 23.4903 18 23.489ZM16.75 20.989L20.75 18.489L16.75 15.989V20.989ZM11.3 4.48901H5H17H11H11.3Z" fill="#626262" />
+									</svg>
+									2 Lessons</span>
+								<span class="d-flex align-items-center"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 2.36401C9.99747 2.36401 8.0399 2.95783 6.37486 4.07038C4.70981 5.18293 3.41206 6.76424 2.64572 8.61434C1.87939 10.4644 1.67888 12.5002 2.06955 14.4643C2.46023 16.4284 3.42454 18.2325 4.84055 19.6485C6.25656 21.0645 8.06066 22.0288 10.0247 22.4195C11.9888 22.8101 14.0246 22.6096 15.8747 21.8433C17.7248 21.077 19.3061 19.7792 20.4186 18.1142C21.5312 16.4491 22.125 14.4915 22.125 12.489C22.122 9.80461 21.0543 7.23101 19.1562 5.33285C17.258 3.43469 14.6844 2.36699 12 2.36401ZM12 20.364C10.4425 20.364 8.91993 19.9022 7.62489 19.0368C6.32985 18.1715 5.32049 16.9416 4.72445 15.5026C4.12841 14.0637 3.97246 12.4803 4.27632 10.9527C4.58018 9.42508 5.3302 8.02189 6.43154 6.92055C7.53288 5.81921 8.93607 5.06919 10.4637 4.76533C11.9913 4.46147 13.5747 4.61742 15.0136 5.21346C16.4526 5.8095 17.6825 6.81886 18.5478 8.1139C19.4131 9.40894 19.875 10.9315 19.875 12.489C19.8728 14.5769 19.0424 16.5786 17.566 18.055C16.0896 19.5314 14.0879 20.3618 12 20.364ZM18.375 12.489C18.375 12.7874 18.2565 13.0735 18.0455 13.2845C17.8345 13.4955 17.5484 13.614 17.25 13.614H12C11.7016 13.614 11.4155 13.4955 11.2045 13.2845C10.9935 13.0735 10.875 12.7874 10.875 12.489V7.23901C10.875 6.94065 10.9935 6.6545 11.2045 6.44352C11.4155 6.23254 11.7016 6.11401 12 6.11401C12.2984 6.11401 12.5845 6.23254 12.7955 6.44352C13.0065 6.6545 13.125 6.94065 13.125 7.23901V11.364H17.25C17.5484 11.364 17.8345 11.4825 18.0455 11.6935C18.2565 11.9045 18.375 12.1906 18.375 12.489Z" fill="#626262" />
+									</svg>
+
+									4h 30m</span>
+							</div>
+						</div>
+					</div>
+					<div class="ed-btn-wrapper d-flex justify-content-center flex-wrap align-items-center">
+						<a href="#" class="btn bg-secondary text-black">Start free trial</a>
+						<a href="#" class="btn bg-secondary text-black">Explore our courses</a>
+					</div>
+				</div>
+			</section>
+			<!--end courses-->
+
+			<!--start topics-->
+			<section class="ed-topics">
+				<div class="container-fluid px-0">
+					<div class="ed-main-heading-wrapper d-flex justify-content-center text-center  flex-column align-items-center">
+						<span class="ed-sub-heading">Start learning from today</span>
+						<h2>Popular topics to <span class="ed-line">learn </span></h2>
+					</div>
+
+					<div class="grid">
+						<div class="ed-topics-wrapper text-center d-flex flex-column justify-content-center align-items-center g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-6 col-sm-12 g-col-12">
+							<figure class="mb-0">
+								<img src="assets/media/topics-icon-1.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Digital marketing</h3>
+							<p>68 courses</p>
+						</div>
+						<div class="ed-topics-wrapper text-center d-flex flex-column justify-content-center align-items-center g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-6 col-sm-12 g-col-12">
+							<figure class="mb-0">
+								<img src="assets/media/topics-icon-2.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Ui/UX Design</h3>
+							<p>68 courses</p>
+						</div>
+						<div class="ed-topics-wrapper text-center d-flex flex-column justify-content-center align-items-center g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-6 col-sm-12 g-col-12">
+							<figure class="mb-0">
+								<img src="assets/media/topics-icon-3.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Web Development</h3>
+							<p>68 courses</p>
+						</div>
+						<div class="ed-topics-wrapper d-flex text-center flex-column justify-content-center align-items-center g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-6 col-sm-12 g-col-12">
+							<figure class="mb-0">
+								<img src="assets/media/topics-icon-4.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Music Production</h3>
+							<p>68 courses</p>
+						</div>
+					</div>
+					<div class="ed-seconad-wrapper">
+						<div class="ed-topics-wrapper w-100 h-100 text-center d-flex flex-column justify-content-center align-items-center">
+							<figure class="mb-0">
+								<img src="assets/media/topics--second-icon-1.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Business anylist</h3>
+							<p>68 courses</p>
+						</div>
+						<div class="ed-topics-wrapper w-100 h-100 text-center d-flex flex-column justify-content-center align-items-center">
+							<figure class="mb-0">
+								<img src="assets/media/topics--second-icon-2.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Finances</h3>
+							<p>68 courses</p>
+						</div>
+						<div class="ed-topics-wrapper w-100 h-100 text-center d-flex flex-column justify-content-center align-items-center">
+							<figure class="mb-0">
+								<img src="assets/media/topics--second-icon-3.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>App Development</h3>
+							<p>68 courses</p>
+						</div>
+						<div class="ed-topics-wrapper w-100 h-100 text-center d-flex flex-column justify-content-center align-items-center">
+							<figure class="mb-0">
+								<img src="assets/media/topics--second-icon-4.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Game Design</h3>
+							<p>12 courses</p>
+						</div>
+						<div class="ed-topics-wrapper w-100 h-100 text-center d-flex flex-column justify-content-center align-items-center">
+							<figure class="mb-0">
+								<img src="assets/media/topics--second-icon-5.webp" width="80" height="80" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3>Academics</h3>
+							<p>68 courses</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!--end topics-->
+
+			<!--start testimonials-->
+			<section class="ed-testimonials">
+				<div class="container">
+					<div class="grid">
+						<div class="ed-testimonial-content-wrapper d-flex flex-column justify-content-center  g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-12 g-col-sm-12 g-col-12">
+							<div class="ed-main-heading-wrapper d-flex flex-column">
+								<span class="ed-sub-heading">Testimonials</span>
+								<h2>What says our <span class="ed-line">students</span> about us</h2>
+							</div>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+							<div class="btn-wrapper">
+								<a href="#" class="btn">View all reviews</a>
+							</div>
+						</div>
+						<div class="ed-slaider-wrapper d-flex flex-column justify-content-center align-items-center flex-shrink-1 g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-12 g-col-sm-12 g-col-12">
+							<div class="swiper mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide shadow text-center d-flex flex-column align-items-center justify-content-center">
+										<figure class="mb-0">
+											<img src="assets/media/testimonials.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+										</figure>
+										<p>You might be raised on a farm.
+											Sometimes languages are difficult and
+											difficult to find the right the adjective
+											to go with noun.</p>
+										<div class="ed-star-wraper d-flex  align-items-center">
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+										</div>
+										<div class="ed-header-wrapper d-flex justify-content-center flex-column">
+											<h3>Jhon Smith</h3>
+											<p>UI UX Designer</p>
+										</div>
+									</div>
+									<div class="swiper-slide shadow text-center d-flex flex-column align-items-center justify-content-center">
+										<figure class="mb-0">
+											<img src="assets/media/testimonials.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+										</figure>
+										<p>You might be raised on a farm.
+											Sometimes languages are difficult and
+											difficult to find the right the adjective
+											to go with noun.</p>
+										<div class="ed-star-wraper d-flex  align-items-center">
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+										</div>
+										<div class="ed-header-wrapper d-flex justify-content-center flex-column">
+											<h3>Jhon Smith</h3>
+											<p>UI UX Designer</p>
+										</div>
+									</div>
+									<div class="swiper-slide shadow text-center d-flex flex-column align-items-center justify-content-center">
+										<figure class="mb-0">
+											<img src="assets/media/testimonials.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+										</figure>
+										<p>You might be raised on a farm.
+											Sometimes languages are difficult and
+											difficult to find the right the adjective
+											to go with noun.</p>
+										<div class="ed-star-wraper d-flex  align-items-center">
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+										</div>
+										<div class="ed-header-wrapper d-flex justify-content-center flex-column">
+											<h3>Jhon Smith</h3>
+											<p>UI UX Designer</p>
+										</div>
+									</div>
+									<div class="swiper-slide shadow text-center d-flex flex-column align-items-center justify-content-center">
+										<figure class="mb-0">
+											<img src="assets/media/testimonials.webp" width="100" height="100" class="img-fluid" alt="Edumin">
+										</figure>
+										<p>You might be raised on a farm.
+											Sometimes languages are difficult and
+											difficult to find the right the adjective
+											to go with noun.</p>
+										<div class="ed-star-wraper d-flex  align-items-center">
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.707 15.7593L16.887 19.4893L15.247 12.4593L20.707 7.72926L13.517 7.11926L10.707 0.489258L7.89703 7.11926L0.707031 7.72926L6.16703 12.4593L4.52703 19.4893L10.707 15.7593Z" fill="#FAC63B" />
+											</svg>
+										</div>
+										<div class="ed-header-wrapper d-flex justify-content-center flex-column">
+											<h3>Jhon Smith</h3>
+											<p>UI UX Designer</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<!--end testimonials-->
+
+			<!--start instructor-->
+			<section class="ed-team-member w-100 h-100">
+				<figure class="shape-1 mb-0">
+					<img src="assets/media/team-shape-1.webp" width="78" height="28" class="img-fluid" alt="Edumin">
+				</figure>
+				<figure class="shape-2 mb-0">
+					<img src="assets/media/team-shape-2.webp" width="49" height="74" class="img-fluid" alt="Edumin">
+				</figure>
+				<figure class="shape-3 mb-0">
+					<img src="assets/media/team-shape-3.webp" width="57" height="66" class="img-fluid" alt="Edumin">
+				</figure>
+				<figure class="shape-4 mb-0">
+					<img src="assets/media/team-shape-4.webp" width="15" height="16" class="img-fluid" alt="Edumin">
+				</figure>
+				<div class="container">
+					<div class="ed-main-heading-wrapper d-flex flex-column justify-content-center align-items-center">
+						<span class="ed-sub-heading">Team member</span>
+						<h2>Our expert <span class="ed-line"> instructors </span></h2>
+					</div>
+					<div class="grid">
+						<div class="ed-team-member-wraper w-100 g-col-xxl-3 g-col-xl-3 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0   d-flex justify-content-center align-items-center">
+								<img src="assets/media/testimonials-1.webp" width="386" height="500" class="img-fluid " alt="Edumin">
+							</figure>
+							<div class="ed-text-content flex-1  d-flex flex-column  align-items-center justify-content-center">
+								<h3>Erics widget</h3>
+								<span>Teaches Creative Writing</span>
+							</div>
+						</div>
+						<div class="ed-team-member-wraper  w-100 h-100 g-col-xxl-3 g-col-xl-3 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0  d-flex justify-content-center align-items-center">
+								<img src="assets/media/testimonials-2.webp" width="386" height="500" class="img-fluid " alt="Edumin">
+							</figure>
+							<div class="ed-text-content d-flex flex-column align-items-center justify-content-center">
+								<h3>Daniel steven</h3>
+								<span>Teaches UI/UX Designig</span>
+							</div>
+						</div>
+						<div class="ed-team-member-wraper w-100 h-100 g-col-xxl-3 g-col-xl-3 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0  d-flex justify-content-center align-items-center ">
+								<img src="assets/media/testimonials-3.webp" width="386" height="500" class="img-fluid w-100 h-100" alt="Edumin">
+							</figure>
+							<div class="ed-text-content d-flex  flex-column align-items-center justify-content-center">
+								<h3>Selina gomez</h3>
+								<span>Teacher Interior Design</span>
+							</div>
+						</div>
+						<div class="ed-team-member-wraper w-100 h-100 g-col-xxl-3 g-col-xl-3 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0  d-flex justify-content-center align-items-center ">
+								<img src="assets/media/testimonials-4.webp" width="386" height="500" class="img-fluid " alt="Edumin">
+							</figure>
+							<div class="ed-text-content d-flex  flex-column align-items-center justify-content-center">
+								<h3>Nelson decosta</h3>
+								<span>Teacher Data Science</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end itstructor-->
+			<section class="ed-blog">
+				<span class="shape-1">
+					<img src="assets/media/blog-bg-shape-1.webp" width="180" height="63" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-2">
+					<img src="assets/media/blog-bg-shape-2.webp" width="125" height="207" class="img-fluid" alt="Edumin">
+				</span>
+				<span class="shape-3">
+					<img src="assets/media/blog-bg-shape-3.webp" width="110" height="110" class="img-fluid" alt="Edumin">
+				</span>
+				<div class="container">
+					<div class="ed-blog-heading-wrap d-flex justify-content-between flex-wrap align-items-center">
+						<div class="ed-main-heading-wrapper mb-0">
+							<span class="ed-sub-heading">Our blogs</span>
+							<h2>Our latest <span class="ed-line">  blogs </span></h2>
+						</div>
+						<div class="btn-wrapper">
+							<a href="#" class="btn">Read all blog</a>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="ed-blog-wrapper w-100 h-100 shadow d-flex flex-column g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/blog-1.webp" width="758" height="400" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3> <a href="#">Financial security thinking and principles theory</a></h3>
+							<div class="ed-admin-date-wrap d-flex  align-items-center">
+								<span class="d-flex align-items-center"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.31024 0.665095C4.35604 1.41882 1.30948 4.24926 0.293527 8.11288C-0.00185454 9.2362 -0.0743306 11.0297 0.128565 12.1935C0.378095 13.6247 0.932402 14.9999 1.74981 16.216C2.2286 16.9282 3.63199 18.3316 4.34421 18.8104C8.31041 21.4766 13.47 21.0656 16.8754 17.812C18.3482 16.405 19.284 14.7986 19.7748 12.8352C20.0547 11.7154 20.055 9.36358 19.7755 8.25714C18.8486 4.58788 16.0909 1.79311 12.4473 0.830317C11.4229 0.559645 9.30688 0.475163 8.31024 0.665095ZM9.14113 1.25568C7.65944 1.36505 5.99643 1.9746 4.66047 2.89816C3.91841 3.41123 2.71696 4.62808 2.24278 5.347C0.456138 8.05572 0.183292 11.5792 1.53674 14.4642C1.86927 15.173 2.50876 16.2043 2.61577 16.2043C2.6524 16.2043 2.70878 15.9009 2.74106 15.53C2.83468 14.4538 2.99337 14.0191 3.49095 13.4746C4.1635 12.7388 4.5157 12.6371 6.39335 12.6371H7.90227L8.93354 15.1168C9.50073 16.4806 9.98569 17.5964 10.0112 17.5964C10.0367 17.5964 10.5216 16.4806 11.0888 15.1168L12.1201 12.6371H13.629C15.4968 12.6371 15.8606 12.7407 16.5171 13.4591C17.0065 13.9945 17.1907 14.4962 17.2777 15.53C17.3089 15.9009 17.3656 16.2043 17.4038 16.2043C17.5132 16.2043 18.1493 15.1812 18.4856 14.4642C19.6397 12.0043 19.6259 9.03966 18.449 6.56289C17.9561 5.52562 17.3292 4.66323 16.4644 3.83277C14.4338 1.88273 12.0434 1.04148 9.14113 1.25568ZM9.23754 3.06825C8.59605 3.20337 7.77272 3.64344 7.26801 4.12075C4.64499 6.60143 6.39674 10.984 10.0112 10.984C13.9467 10.984 15.4914 5.90279 12.2318 3.67903C11.4492 3.14517 10.1399 2.87806 9.23754 3.06825Z" fill="#626262" />
+									</svg>Admin</span>
+								<span class="d-flex align-items-center"><svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20.5242 9.34028V6.00694C20.5242 4.77964 19.4582 3.78472 18.1432 3.78472H3.85751C2.54255 3.78472 1.47656 4.77964 1.47656 6.00694V9.34028M20.5242 9.34028V19.3403C20.5242 20.5676 19.4582 21.5625 18.1432 21.5625H3.85751C2.54255 21.5625 1.47656 20.5676 1.47656 19.3403V9.34028M20.5242 9.34028H1.47656M6.23847 1.5625V6.00694M15.7623 1.5625V6.00694" stroke="#626262" stroke-width="2" stroke-linecap="round" />
+										<path d="M6.00043 11.5625H3.77821C3.47139 11.5625 3.22266 11.8112 3.22266 12.1181V14.3403C3.22266 14.6471 3.47139 14.8958 3.77821 14.8958H6.00043C6.30726 14.8958 6.55599 14.6471 6.55599 14.3403V12.1181C6.55599 11.8112 6.30726 11.5625 6.00043 11.5625Z" fill="#626262" />
+										<path d="M11.0004 11.5625H8.77821C8.47139 11.5625 8.22266 11.8112 8.22266 12.1181V14.3403C8.22266 14.6471 8.47139 14.8958 8.77821 14.8958H11.0004C11.3073 14.8958 11.556 14.6471 11.556 14.3403V12.1181C11.556 11.8112 11.3073 11.5625 11.0004 11.5625Z" fill="#626262" />
+										<path d="M16.0004 11.5625H13.7782C13.4714 11.5625 13.2227 11.8112 13.2227 12.1181V14.3403C13.2227 14.6471 13.4714 14.8958 13.7782 14.8958H16.0004C16.3073 14.8958 16.556 14.6471 16.556 14.3403V12.1181C16.556 11.8112 16.3073 11.5625 16.0004 11.5625Z" fill="#626262" />
+									</svg>
+									Jan 29, 2023</span>
+							</div>
+
+						</div>
+						<div class="ed-blog-wrapper w-100 h-100 shadow d-flex flex-column g-col-xxl-6 g-col-xl-6 g-col-lg-6 g-col-md-6 g-col-sm-12 g-col-12">
+							<figure class="mb-0 w-100 h-100">
+								<img src="assets/media/blog-2.webp" width="758" height="400" class="img-fluid" alt="Edumin">
+							</figure>
+							<h3> <a href="#">Basic fundamentals of interior & graphics design</a></h3>
+							<div class="ed-admin-date-wrap d-flex  align-items-center">
+								<span class="d-flex align-items-center"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.31024 0.665095C4.35604 1.41882 1.30948 4.24926 0.293527 8.11288C-0.00185454 9.2362 -0.0743306 11.0297 0.128565 12.1935C0.378095 13.6247 0.932402 14.9999 1.74981 16.216C2.2286 16.9282 3.63199 18.3316 4.34421 18.8104C8.31041 21.4766 13.47 21.0656 16.8754 17.812C18.3482 16.405 19.284 14.7986 19.7748 12.8352C20.0547 11.7154 20.055 9.36358 19.7755 8.25714C18.8486 4.58788 16.0909 1.79311 12.4473 0.830317C11.4229 0.559645 9.30688 0.475163 8.31024 0.665095ZM9.14113 1.25568C7.65944 1.36505 5.99643 1.9746 4.66047 2.89816C3.91841 3.41123 2.71696 4.62808 2.24278 5.347C0.456138 8.05572 0.183292 11.5792 1.53674 14.4642C1.86927 15.173 2.50876 16.2043 2.61577 16.2043C2.6524 16.2043 2.70878 15.9009 2.74106 15.53C2.83468 14.4538 2.99337 14.0191 3.49095 13.4746C4.1635 12.7388 4.5157 12.6371 6.39335 12.6371H7.90227L8.93354 15.1168C9.50073 16.4806 9.98569 17.5964 10.0112 17.5964C10.0367 17.5964 10.5216 16.4806 11.0888 15.1168L12.1201 12.6371H13.629C15.4968 12.6371 15.8606 12.7407 16.5171 13.4591C17.0065 13.9945 17.1907 14.4962 17.2777 15.53C17.3089 15.9009 17.3656 16.2043 17.4038 16.2043C17.5132 16.2043 18.1493 15.1812 18.4856 14.4642C19.6397 12.0043 19.6259 9.03966 18.449 6.56289C17.9561 5.52562 17.3292 4.66323 16.4644 3.83277C14.4338 1.88273 12.0434 1.04148 9.14113 1.25568ZM9.23754 3.06825C8.59605 3.20337 7.77272 3.64344 7.26801 4.12075C4.64499 6.60143 6.39674 10.984 10.0112 10.984C13.9467 10.984 15.4914 5.90279 12.2318 3.67903C11.4492 3.14517 10.1399 2.87806 9.23754 3.06825Z" fill="#626262" />
+									</svg>Admin</span>
+								<span class="d-flex align-items-center"><svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M20.5242 9.34028V6.00694C20.5242 4.77964 19.4582 3.78472 18.1432 3.78472H3.85751C2.54255 3.78472 1.47656 4.77964 1.47656 6.00694V9.34028M20.5242 9.34028V19.3403C20.5242 20.5676 19.4582 21.5625 18.1432 21.5625H3.85751C2.54255 21.5625 1.47656 20.5676 1.47656 19.3403V9.34028M20.5242 9.34028H1.47656M6.23847 1.5625V6.00694M15.7623 1.5625V6.00694" stroke="#626262" stroke-width="2" stroke-linecap="round" />
+										<path d="M6.00043 11.5625H3.77821C3.47139 11.5625 3.22266 11.8112 3.22266 12.1181V14.3403C3.22266 14.6471 3.47139 14.8958 3.77821 14.8958H6.00043C6.30726 14.8958 6.55599 14.6471 6.55599 14.3403V12.1181C6.55599 11.8112 6.30726 11.5625 6.00043 11.5625Z" fill="#626262" />
+										<path d="M11.0004 11.5625H8.77821C8.47139 11.5625 8.22266 11.8112 8.22266 12.1181V14.3403C8.22266 14.6471 8.47139 14.8958 8.77821 14.8958H11.0004C11.3073 14.8958 11.556 14.6471 11.556 14.3403V12.1181C11.556 11.8112 11.3073 11.5625 11.0004 11.5625Z" fill="#626262" />
+										<path d="M16.0004 11.5625H13.7782C13.4714 11.5625 13.2227 11.8112 13.2227 12.1181V14.3403C13.2227 14.6471 13.4714 14.8958 13.7782 14.8958H16.0004C16.3073 14.8958 16.556 14.6471 16.556 14.3403V12.1181C16.556 11.8112 16.3073 11.5625 16.0004 11.5625Z" fill="#626262" />
+									</svg>
+									Jan 29, 2023</span>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<!--footer strat-->
+		<footer class="ed-footer">
+			<div class="container">
+				<div class="grid">
+					<div class="ed-footer-col-wrapper d-flex flex-column  g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-3 g-col-sm-12 g-col-12">
+						<a href="index.html" aria-label="footer-logo">
+							<svg width="124" height="27" viewBox="0 0 124 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.926492 26.5625V1.10795H18.6751V6.1044H7.07884V11.3246H17.7678V16.3335H7.07884V21.5661H18.6751V26.5625H0.926492ZM29.5007 26.8359C28.0921 26.8359 26.8119 26.4714 25.6602 25.7422C24.5084 25.013 23.5887 23.9193 22.9009 22.4609C22.2132 21.0026 21.8693 19.1921 21.8693 17.0295C21.8693 14.784 22.2256 12.9362 22.9382 11.4862C23.6508 10.0361 24.583 8.96307 25.7347 8.26704C26.8948 7.57102 28.1418 7.22301 29.4759 7.22301C30.4785 7.22301 31.3361 7.39702 32.0487 7.74503C32.7612 8.08475 33.3496 8.52391 33.8136 9.0625C34.2776 9.60109 34.6297 10.1604 34.87 10.7404H34.9943V1.10795H41.0721V26.5625H35.0565V23.4677H34.87C34.6132 24.056 34.2486 24.607 33.7763 25.1207C33.304 25.6345 32.7115 26.0488 31.9989 26.3636C31.2946 26.6785 30.4619 26.8359 29.5007 26.8359ZM31.6136 22.1005C32.3511 22.1005 32.9808 21.8933 33.5028 21.479C34.0249 21.0565 34.4267 20.464 34.7085 19.7017C34.9902 18.9394 35.131 18.0445 35.131 17.017C35.131 15.973 34.9902 15.074 34.7085 14.32C34.435 13.5659 34.0331 12.9859 33.5028 12.5799C32.9808 12.1739 32.3511 11.9709 31.6136 11.9709C30.8596 11.9709 30.2216 12.178 29.6996 12.5923C29.1776 13.0066 28.7798 13.5908 28.5064 14.3448C28.2412 15.0988 28.1087 15.9896 28.1087 17.017C28.1087 18.0445 28.2454 18.9394 28.5188 19.7017C28.7923 20.464 29.1858 21.0565 29.6996 21.479C30.2216 21.8933 30.8596 22.1005 31.6136 22.1005ZM57.2329 18.3221V7.47159H63.2982V26.5625H57.5063V23.0078H57.3074C56.8849 24.1761 56.164 25.1042 55.1448 25.7919C54.1339 26.4714 52.9117 26.8111 51.4782 26.8111C50.1773 26.8111 49.0339 26.5128 48.0479 25.9162C47.0618 25.3196 46.2954 24.4869 45.7485 23.418C45.2016 22.3408 44.924 21.0813 44.9157 19.6396V7.47159H50.9935V18.4464C51.0018 19.4821 51.2752 20.2983 51.8138 20.8949C52.3524 21.4915 53.0857 21.7898 54.0138 21.7898C54.6186 21.7898 55.1614 21.6572 55.642 21.392C56.1308 21.1186 56.5161 20.725 56.7979 20.2113C57.0879 19.6893 57.2329 19.0595 57.2329 18.3221ZM67.7385 26.5625V7.47159H71.3056V10.5788H71.5417C71.9395 9.52652 72.5899 8.7062 73.4931 8.1179C74.3962 7.52131 75.4776 7.22301 76.737 7.22301C78.0131 7.22301 79.082 7.52131 79.9437 8.1179C80.8137 8.71449 81.4559 9.5348 81.8702 10.5788H82.0691C82.5248 9.55966 83.2498 8.74763 84.2441 8.14275C85.2385 7.52959 86.4234 7.22301 87.7988 7.22301C89.5306 7.22301 90.9434 7.76574 92.0371 8.85121C93.1391 9.93667 93.6902 11.5732 93.6902 13.7607V26.5625H89.9739V14.1087C89.9739 12.8161 89.6217 11.8797 88.9174 11.2997C88.2131 10.7197 87.3721 10.4297 86.3944 10.4297C85.1846 10.4297 84.2441 10.8026 83.573 11.5483C82.9018 12.2857 82.5662 13.2345 82.5662 14.3945V26.5625H78.8624V13.8725C78.8624 12.8368 78.5392 12.004 77.8929 11.3743C77.2466 10.7446 76.4056 10.4297 75.3699 10.4297C74.6655 10.4297 74.0151 10.6161 73.4185 10.989C72.8302 11.3536 72.3538 11.8632 71.9892 12.5178C71.6329 13.1723 71.4547 13.9305 71.4547 14.7923V26.5625H67.7385ZM98.6711 26.5625V7.47159H102.387V26.5625H98.6711ZM100.548 4.52592C99.9015 4.52592 99.3464 4.31049 98.8824 3.87961C98.4266 3.44046 98.1988 2.91844 98.1988 2.31356C98.1988 1.7004 98.4266 1.17838 98.8824 0.747513C99.3464 0.308356 99.9015 0.0887778 100.548 0.0887778C101.194 0.0887778 101.745 0.308356 102.201 0.747513C102.665 1.17838 102.897 1.7004 102.897 2.31356C102.897 2.91844 102.665 3.44046 102.201 3.87961C101.745 4.31049 101.194 4.52592 100.548 4.52592ZM111.103 15.2273V26.5625H107.387V7.47159H110.954V10.5788H111.19C111.629 9.56794 112.317 8.75592 113.253 8.14275C114.198 7.52959 115.387 7.22301 116.82 7.22301C118.121 7.22301 119.261 7.49645 120.238 8.04332C121.216 8.58191 121.974 9.38565 122.513 10.4545C123.052 11.5234 123.321 12.8451 123.321 14.4194V26.5625H119.605V14.8668C119.605 13.4831 119.244 12.4018 118.523 11.6229C117.802 10.8357 116.812 10.4421 115.553 10.4421C114.691 10.4421 113.925 10.6286 113.253 11.0014C112.59 11.3743 112.064 11.9212 111.675 12.642C111.294 13.3546 111.103 14.2164 111.103 15.2273Z" fill="white" />
+							</svg>
+						</a>
+						<p>Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.</p>
+						<div class="ed-icon-wrapper d-flex align-items-center">
+							<a href="#" aria-label="social icon" class="d-flex justify-content-center align-items-center"><svg width="25" height="25" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.22922 5.7708C7.22883 6.61904 6.71422 7.38235 5.92803 7.7008C5.14184 8.01926 4.24108 7.82926 3.65049 7.2204C3.0599 6.61154 2.89742 5.7054 3.23966 4.92928C3.58191 4.15315 4.36053 3.66202 5.20839 3.68747C6.3345 3.72127 7.22973 4.64418 7.22922 5.7708ZM7.29172 9.3958H3.12505V22.4374H7.29172V9.3958ZM13.8751 9.3958H9.72922V22.4374H13.8334V15.5937C13.8334 11.7812 18.8022 11.427 18.8022 15.5937V22.4374H22.9167V14.177C22.9167 7.74997 15.5626 7.98955 13.8334 11.1458L13.8751 9.3958Z" fill="#46295A" />
+								</svg>
+							</a>
+							<a href="#" aria-label="social icon" class="d-flex justify-content-center align-items-center"><svg width="25" height="25" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.5827 14.6252H17.1868L18.2285 10.4585H14.5827V8.37516C14.5827 7.30289 14.5827 6.29183 16.666 6.29183H18.2285V2.79193C17.8892 2.74688 16.6066 2.646 15.2524 2.646C12.4248 2.646 10.416 4.37189 10.416 7.54153V10.4585H7.29102V14.6252H10.416V23.4793H14.5827V14.6252Z" fill="#46295A" />
+								</svg>
+							</a>
+							<a href="#" aria-label="social icon" class="d-flex justify-content-center align-items-center"><svg width="25" height="25" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.33268 2.646H1.04102L9.64608 14.1194L1.50971 23.4792H4.27016L10.9247 15.8241L16.666 23.4793H23.9577L14.9907 11.5234L22.7078 2.646H19.9474L13.7122 9.81868L8.33268 2.646ZM17.7077 21.396L5.20768 4.72933H7.29102L19.791 21.396H17.7077Z" fill="#46295A" />
+								</svg>
+							</a>
+							<a href="#" aria-label="social icon" class="d-flex justify-content-center align-items-center"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.5291 2.06299C14.6545 2.06485 15.2248 2.07081 15.7176 2.08548L15.9117 2.09182C16.1359 2.09979 16.3571 2.10979 16.6238 2.12229C17.6879 2.17146 18.4138 2.33979 19.0513 2.58729C19.7104 2.84146 20.2671 3.18479 20.8229 3.74063C21.3779 4.29646 21.7213 4.85479 21.9763 5.51229C22.2229 6.14896 22.3913 6.87563 22.4413 7.93979C22.4532 8.20646 22.4628 8.42766 22.4707 8.6519L22.477 8.84599C22.4916 9.33873 22.4983 9.90912 22.5004 11.0346L22.5012 11.7802C22.5013 11.8713 22.5013 11.9653 22.5013 12.0623L22.5012 12.3444L22.5006 13.0901C22.4987 14.2155 22.4928 14.7859 22.4781 15.2786L22.4717 15.4727C22.4638 15.697 22.4538 15.9182 22.4413 16.1848C22.3921 17.249 22.2229 17.9748 21.9763 18.6123C21.7221 19.2715 21.3779 19.8282 20.8229 20.384C20.2671 20.939 19.7079 21.2823 19.0513 21.5373C18.4138 21.784 17.6879 21.9523 16.6238 22.0023C16.3571 22.0142 16.1359 22.0239 15.9117 22.0317L15.7176 22.038C15.2248 22.0527 14.6545 22.0593 13.5291 22.0615L12.7834 22.0623C12.6923 22.0623 12.5983 22.0623 12.5013 22.0623H12.2192L11.4735 22.0616C10.3481 22.0598 9.77769 22.0538 9.28494 22.0391L9.09086 22.0328C8.86661 22.0248 8.64541 22.0148 8.37875 22.0023C7.31458 21.9532 6.58958 21.784 5.95125 21.5373C5.29291 21.2832 4.73541 20.939 4.17958 20.384C3.62375 19.8282 3.28125 19.269 3.02625 18.6123C2.77875 17.9748 2.61125 17.249 2.56125 16.1848C2.54937 15.9182 2.53968 15.697 2.53183 15.4727L2.52554 15.2786C2.51091 14.7859 2.50424 14.2155 2.50208 13.0901L2.50195 11.0346C2.50381 9.90912 2.50976 9.33873 2.52443 8.84599L2.53078 8.6519C2.53875 8.42766 2.54875 8.20646 2.56125 7.93979C2.61041 6.87479 2.77875 6.14979 3.02625 5.51229C3.28041 4.85396 3.62375 4.29646 4.17958 3.74063C4.73541 3.18479 5.29375 2.84229 5.95125 2.58729C6.58875 2.33979 7.31375 2.17229 8.37875 2.12229C8.64541 2.11042 8.86661 2.10073 9.09086 2.09288L9.28494 2.08659C9.77769 2.07195 10.3481 2.06528 11.4735 2.06312L13.5291 2.06299ZM12.5013 7.06229C9.73835 7.06229 7.50125 9.30182 7.50125 12.0623C7.50125 14.8252 9.74078 17.0623 12.5013 17.0623C15.2642 17.0623 17.5013 14.8228 17.5013 12.0623C17.5013 9.29939 15.2617 7.06229 12.5013 7.06229ZM12.5013 9.06229C14.1582 9.06229 15.5013 10.405 15.5013 12.0623C15.5013 13.7192 14.1586 15.0623 12.5013 15.0623C10.8444 15.0623 9.50125 13.7197 9.50125 12.0623C9.50125 10.4054 10.8439 9.06229 12.5013 9.06229ZM17.7513 5.56229C17.062 5.56229 16.5013 6.1222 16.5013 6.81144C16.5013 7.50069 17.0612 8.06146 17.7513 8.06146C18.4405 8.06146 19.0013 7.50156 19.0013 6.81144C19.0013 6.1222 18.4396 5.56143 17.7513 5.56229Z" fill="#46295A" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="ed-link-wrapper d-flex flex-column g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-12 g-col-sm-12 g-col-12">
+						<h2>Quick Links</h2>
+						<ul class="d-flex flex-column">
+							<li><a href="about-us.html" aria-label="footer-link" class="text-decoration-none">About us</a></li>
+							<li><a href="Instructor.html" aria-label="footer-link" class="text-decoration-none">Instructor</a></li>
+							<li><a href="courses.html" aria-label="footer-link" class="text-decoration-none">Courses</a></li>
+							<li><a href="blog.html" aria-label="footer-link" class="text-decoration-none">Blog</a></li>
+							<li><a href="contactus.html" aria-label="footer-link" class="text-decoration-none">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="ed-contact-wrapper d-flex flex-column	 g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-12 g-col-sm-12 g-col-12">
+						<h3>Our contacts</h3>
+						<div class="ed-address-wrapper d-flex  align-items-center">
+							<span class="ed-icon-box d-flex justify-content-center align-items-center flex-shrink-0">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 21.833L18.1559 16.6769C21.0035 13.8294 21.0035 9.21258 18.1559 6.36501C15.3084 3.51743 10.6916 3.51743 7.84401 6.36501C4.99644 9.21258 4.99644 13.8294 7.84401 16.6769L13 21.833ZM13 24.7792L6.37088 18.1502C2.70971 14.4889 2.70971 8.55304 6.37088 4.89187C10.032 1.2307 15.9679 1.2307 19.6292 4.89187C23.2903 8.55304 23.2903 14.4889 19.6292 18.1502L13 24.7792ZM13 13.6043C14.1506 13.6043 15.0833 12.6716 15.0833 11.521C15.0833 10.3704 14.1506 9.43766 13 9.43766C11.8494 9.43766 10.9167 10.3704 10.9167 11.521C10.9167 12.6716 11.8494 13.6043 13 13.6043ZM13 15.6877C10.6988 15.6877 8.83333 13.8221 8.83333 11.521C8.83333 9.21981 10.6988 7.35433 13 7.35433C15.3011 7.35433 17.1667 9.21981 17.1667 11.521C17.1667 13.8221 15.3011 15.6877 13 15.6877Z" fill="#46295A" />
+								</svg>
+							</span>
+							<p>Adress: 27 Division St, Berakuti, NY 121102, USA</p>
+						</div>
+						<div class="ed-address-wrapper d-flex d-flex align-items-center">
+							<span class="ed-icon-box d-flex justify-content-center align-items-center flex-shrink-0">
+								<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.75579 11.1897C10.7312 12.905 12.1575 14.3312 13.8728 15.3067L14.7942 14.0168C15.1005 13.588 15.6787 13.4555 16.1412 13.7081C17.6067 14.5086 19.2261 14.9951 20.9155 15.1289C21.4573 15.1718 21.875 15.6239 21.875 16.1673V20.816C21.875 21.3501 21.471 21.7976 20.9398 21.8522C20.3878 21.909 19.8309 21.9375 19.2708 21.9375C10.3537 21.9375 3.125 14.7087 3.125 5.79167C3.125 5.23153 3.15356 4.6747 3.2103 4.12267C3.2649 3.59141 3.71244 3.1875 4.24651 3.1875H8.89523C9.43865 3.1875 9.89076 3.60525 9.93365 4.14697C10.0674 5.83633 10.5539 7.45588 11.3544 8.92129C11.607 9.38375 11.4745 9.96202 11.0457 10.2683L9.75579 11.1897ZM7.12943 10.5054L9.10854 9.09176C8.54736 7.88035 8.16279 6.59566 7.96591 5.27083H5.21778C5.21149 5.44408 5.20833 5.61771 5.20833 5.79167C5.20833 13.5581 11.5044 19.8542 19.2708 19.8542C19.4448 19.8542 19.6184 19.851 19.7917 19.8447V17.0966C18.4669 16.8997 17.1822 16.5151 15.9707 15.954L14.5571 17.9331C13.9852 17.7109 13.4329 17.4495 12.9035 17.1522L12.843 17.1177C10.8018 15.957 9.10556 14.2607 7.94479 12.2195L7.91035 12.159C7.61301 11.6296 7.3516 11.0773 7.12943 10.5054Z" fill="#46295A" />
+								</svg>
+							</span>
+							<a href="tel:+8 1440 456 782">+8 1440 456 782</a>
+						</div>
+					</div>
+					<div class="ed-contact-wrapper d-flex flex-column	 g-col-xxl-3 g-col-xl-3 g-col-lg-3 g-col-md-3 g-col-sm-12 g-col-12">
+						<h3>Newsletter</h3>
+						<p>Join over 68,000 people getting our emails Lorem ipsum dolor sit amet consectet</p>
+						<form action="" class="d-flex flex-column">
+							<input type="email" class="form-control" placeholder="Enter your email address 	 	" name="email" id="email">
+							<button class="ed-subcribe-btn border-0">Subscribe now</button>
+						</form>
+
+
+					</div>
+
+
+
+
+				</div>
+			</div>
+			<div class="ed-privacy-policy">
+				<div class="container">
+					<div class="ed-privacy-policy-wrapper d-flex justify-content-between align-items-center flex-wrap">
+						<p>© 2024 Edumin. all rights reserved.</p>
+						<div class="ed-privacy-policy-content d-flex flex-wrap">
+							<a href="#" class="text-decoration-none">Privacy Policy</a>
+							<a href="#" class="text-decoration-none">Terms & conditions</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer end-->
+		<div class="offcanvas bg-white offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header d-flex justify-content-center">
+				<div class="ed-brand">
+					<a href="index.html" aria-label="brand-logo" class="rta-brand-logo">
+						<figure class="mb-0">
+							<img src="assets/media/Edumin-logo.webp" width="124" height="28" class="img-fluid" alt="Edumin">
+						</figure>
+					</a>
+				</div>
+
+			</div>
+			<div class="offcanvas-body ">
+				<ul class="sidebar-menu  d-flex align-items-center flex-column list-unstyled">
+					<li><a href="#" class="text-decoration-none active">Home</a></li>
+					<li><a href="#" class="text-decoration-none">About us</a></li>
+					<li><a href="#" class="text-decoration-none">Instructor</a></li>
+					<li><a href="#" class="text-decoration-none">Courses</a></li>
+					<li><a href="#" class="text-decoration-none">Blog</a></li>
+					<li><a href="#" class="text-decoration-none">Contact us</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/myscript/swiper-bundle.min.js"></script>
+		<script src="assets/myscript/jquery-3.6.1.min.js"></script>
+		<script src="assets/myscript/script.js"></script>
+
+
+	</body>
+</html>

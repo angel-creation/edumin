@@ -1,0 +1,94 @@
+.#{$prefix}blog {
+	background-color: rgba($color: $primary, $alpha: 0.1);
+	position: relative;
+
+	.shape-1 {
+		position: absolute;
+		@include rfs(45px, top);
+		@include rfs(10px, right);
+		right: 0;
+		z-index: -1;
+	}
+	.shape-2 {
+		position: absolute;
+		@include rfs(85px, bottom);
+		@include rfs(9px, right);
+		right: 0;
+		z-index: -1;
+	}
+	.shape-3 {
+		position: absolute;
+		@include rfs(80px, bottom);
+		@include rfs(9px, left);
+		right: 0;
+		z-index: -1;
+	}
+	.#{$prefix}blog-heading-wrap {
+		@include rfs(50px, margin-bottom);
+	}
+	.#{$prefix}blog-wrapper {
+		@include rfs(20px, padding);
+		background-color: $white;
+		@include rfs(10px, border-radius);
+		transition: $transition-base;
+
+		&:hover {
+			figure {
+				overflow: hidden;
+				img {
+					transform: scale(1.5);
+					transition: 0.5s all ease-in-out;
+				}
+			}
+		}
+		figure {
+			img {
+				@include rfs(10px 10px 0 0, border-radius);
+			}
+		}
+		@include rfs(20px, padding);
+		@include rfs(20px, gap);
+		h3 {
+			@include rfs(24px, font-size);
+			@include rfs(32px, line-height);
+			a {
+				color: $text;
+				transition: $transition-base;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+		.#{$prefix}admin-date-wrap {
+			@include rfs(20px, gap);
+			span {
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}blog {
+		.shape-1 {
+			display: none;
+		}
+		.shape-2 {
+			display: none;
+		}
+		.shape-3 {
+			display: none;
+		}
+		.shape-4 {
+			display: none;
+		}
+
+		.grid {
+			@include rfs(10px, gap);
+			.#{$prefix}blog-wrapper {
+				@include rfs(10px, padding);
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}

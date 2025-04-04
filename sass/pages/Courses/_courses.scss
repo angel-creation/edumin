@@ -1,0 +1,36 @@
+.#{$prefix}courses {
+	.#{$prefix}courses-main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		@include rfs(25px, gap);
+
+		.#{$prefix}courses-wrapper {
+			.#{$prefix}courses-heading {
+				a {
+					transition: $transition-base;
+					&:hover {
+						color: $red !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.#{$prefix}courses {
+		.#{$prefix}courses-main-wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			@include rfs(20px, gap);
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.#{$prefix}courses {
+		.#{$prefix}courses-main-wrapper {
+			grid-template-columns: repeat(1, 1fr);
+			@include rfs(10px, gap);
+		}
+	}
+}

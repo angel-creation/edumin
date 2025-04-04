@@ -1,0 +1,125 @@
+.#{$prefix}testimonials {
+	overflow: hidden;
+	background-color: rgba($color: $primary, $alpha: 0.1);
+	position: relative;
+
+	&::after {
+		content: url("../media/testimonials-bg-shape.webp");
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&::before {
+		content: url("../media/testimonials-bg-shape-2.webp");
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.#{$prefix}main-heading-wrapper {
+		margin-bottom: 0;
+	}
+	.#{$prefix}testimonial-content-wrapper {
+		@include rfs(40px, gap);
+	}
+
+	.swiper {
+		@include rfs(426px, width);
+	}
+
+	.swiper-slide {
+		@include rfs(20px, gap);
+		@include rfs(50px, padding);
+		@include rfs(20px, border-radius);
+		background-color: $white;
+
+		figure {
+			@include rfs(100px, width);
+			img {
+				width: 100%;
+				height: 100%;
+				@include rfs(100px, border-radius);
+			}
+		}
+		p {
+			color: $grey-dark;
+		}
+		h3 {
+			@include rfs(24px, font-size);
+			color: $text;
+		}
+		.#{$prefix}header-wrapper {
+			@include rfs(10px, gap);
+		}
+	}
+
+	.swiper-slide:nth-child(1n) {
+		background-color: white;
+	}
+
+	.swiper-slide:nth-child(2n) {
+		background-color: white;
+	}
+
+	.swiper-slide:nth-child(3n) {
+		background-color: white;
+	}
+
+	.swiper-slide:nth-child(4n) {
+		background-color: white;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}testimonials {
+		&::after {
+			content: "";
+			.grid {
+				@include rfs(15px, gap);
+			}
+		}
+
+		.#{$prefix}slaider-wrapper {
+			.swiper {
+				@include rfs(626px, width);
+			}
+			.swiper-slide {
+				@include rfs(10px, gap);
+				@include rfs(25px, padding);
+				@include rfs(10px, border-radius);
+				background-color: $white;
+			}
+		}
+
+		.grid {
+			@include rfs(10px, gap);
+		}
+		.#{$prefix}testimonial-content-wrapper {
+			@include rfs(10px, gap);
+		}
+	}
+}
+@include media-breakpoint-down(sm) {
+	.#{$prefix}testimonials {
+		&::after {
+			content: "";
+			.grid {
+				@include rfs(15px, gap);
+			}
+		}
+
+		.#{$prefix}slaider-wrapper {
+			.swiper {
+				@include rfs(626px, width);
+			}
+		}
+
+		.grid {
+			@include rfs(10px, gap);
+		}
+		.#{$prefix}testimonial-content-wrapper {
+			@include rfs(10px, gap);
+		}
+	}
+}

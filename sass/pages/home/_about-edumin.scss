@@ -1,0 +1,99 @@
+.#{$prefix}about-edumin {
+	position: relative;
+	z-index: 1;
+
+	position: relative;
+
+	.shape-1 {
+		width: 324px;
+		height: auto;
+		z-index: -1;
+		img {
+			width: 100%;
+		}
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.shape-2 {
+		position: absolute;
+		bottom: 0;
+		@include rfs(99px, left);
+	}
+
+	.#{$prefix}content-wrapper {
+		@include rfs(20px, gap);
+		.#{$prefix}main-heading-wrapper {
+			@include rfs(20px, margin-bottom);
+		}
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		.#{$prefix}our-vision-wrapper {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			@include rfs(20px, gap);
+
+			.#{$prefix}icon-wrapper {
+				background: $secondary;
+				@include rfs(80px, width);
+				@include rfs(80px, height);
+
+				svg {
+					@include rfs(41px, width);
+					@include rfs(41px, height);
+				}
+			}
+			.#{$prefix}our-vision-content {
+				display: flex;
+				flex-direction: column;
+				@include rfs(10px, gap);
+				h3 {
+					@include rfs(26px, line-height);
+					line-height: 26px;
+					a {
+						color: $text;
+						@include rfs(20px, font-size);
+						@include rfs(26px, line-height);
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.shape-2 {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}about-edumin {
+		.shape-1 {
+			display: none;
+		}
+		.shape-2 {
+			display: none;
+		}
+		.#{$prefix}content-wrapper {
+			gap: 10px;
+
+			.#{$prefix}our-vision-wrapper {
+				gap: 10px;
+			}
+		}
+	}
+}

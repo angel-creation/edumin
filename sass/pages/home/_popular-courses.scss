@@ -1,0 +1,195 @@
+.#{$prefix}courses {
+	position: relative;
+	&::after {
+		z-index: -3;
+		position: absolute;
+		content: "";
+		width: 100%;
+		@include rfs(362px, height);
+		background-color: $primary;
+		bottom: 0;
+		left: 0;
+	}
+
+	.shape-1 {
+		position: absolute;
+		@include rfs(97px, bottom);
+		@include rfs(48px, left);
+	}
+	.shape-2 {
+		position: absolute;
+		@include rfs(54px, top);
+		@include rfs(18px, right);
+	}
+	.shape-3 {
+		position: absolute;
+		@include rfs(137px, top);
+		@include rfs(30px, left);
+	}
+
+	.#{$prefix}courses-wrapper {
+		@include rfs(20px, padding);
+		@include rfs(20px, gap);
+		border: 1px solid rgba($color: $primary, $alpha: 0.1);
+		@include rfs(20px, border-radius);
+		background-color: $white;
+
+		&:hover {
+			figure {
+				overflow: hidden;
+				img {
+					transform: scale(1.5);
+					transition: 0.5s all ease-in-out;
+				}
+			}
+		}
+
+		.#{$prefix}icon-wrapper {
+			@include rfs(20px, gap);
+			@include rfs(10px, margin-bottom);
+		}
+
+		figure {
+			position: relative;
+			span {
+				background-color: $primary;
+				@include rfs(10px 20px, padding);
+				color: $white;
+				position: absolute;
+				left: 0;
+				@include rfs(20px, top);
+			}
+			img {
+				@include rfs(10px, border-radius);
+			}
+		}
+		.#{$prefix}price-heading {
+			@include rfs(20px, font-size);
+			font-weight: 700;
+			@include rfs(28px, line-height);
+			@include rfs(20px, border-radius);
+		}
+		h3 {
+			a {
+				color: $text;
+				@include rfs(24px font-size);
+				@include rfs(30px line-height);
+				font-weight: 700;
+				transition: 0.5s all;
+				&:hover {
+					color: $red !important;
+				}
+			}
+		}
+		.#{$prefix}icon-wrapper {
+			@include rfs(10px, margin-bottom);
+		}
+	}
+	.#{$prefix}btn-wrapper {
+		@include rfs(20px, gap);
+		@include rfs(25px, margin-top);
+	}
+
+	.ed-courses-heading {
+		@include rfs(24px, font-size);
+		@include rfs(32px, line-height);
+	}
+}
+
+@include media-breakpoint-down(xl) {
+	.#{$prefix}courses {
+		.grid {
+			@include rfs(15px, gap);
+		}
+		.#{$prefix}main-heading-wrapper {
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+	.shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+	.shape-3 {
+		display: none;
+	}
+}
+@include media-breakpoint-down(lg) {
+	.#{$prefix}courses {
+		.grid {
+			gap: 10px;
+		}
+		.#{$prefix}main-heading-wrapper {
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+	.shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+	.shape-3 {
+		display: none;
+	}
+}
+@include media-breakpoint-down(md) {
+	.#{$prefix}courses {
+		.grid {
+			gap: 10px;
+		}
+		.#{$prefix}main-heading-wrapper {
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+	.shape-1 {
+		display: none;
+	}
+	.shape-2 {
+		display: none;
+	}
+	.shape-3 {
+		display: none;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.#{$prefix}courses {
+		.grid {
+			gap: 10px;
+		}
+		.#{$prefix}main-heading-wrapper {
+			h2 {
+				text-align: center;
+			}
+		}
+		.#{$prefix}courses-wrapper {
+			@include rfs(10px, padding);
+			@include rfs(10px, gap);
+			.#{$prefix}icon-wrapper {
+				span {
+					@include rfs(16px, font-size);
+					svg {
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+			figure {
+				span {
+					@include rfs(8px 10px, padding);
+					@include rfs(16px, font-size);
+				}
+			}
+		}
+		.#{$prefix}btn-wrapper {
+			@include rfs(10px, gap);
+		}
+	}
+}

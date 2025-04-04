@@ -1,0 +1,246 @@
+.#{$prefix}blog-wrapper {
+	figure {
+		@include rfs(20px, margin-bottom);
+	}
+	.#{$prefix}icon-wrapper {
+		@include rfs(20px, gap);
+		@include rfs(20px, margin-bottom);
+
+		.#{$prefix}icon-box {
+			@include rfs(20px, gap);
+		}
+	}
+	h3 {
+		@include rfs(48px, font-size);
+		@include rfs(55px, line-height);
+		color: $text;
+		@include rfs(20px, margin-bottom);
+	}
+	h4 {
+		@include rfs(24px, font-size);
+		@include rfs(32px, line-height);
+		@include rfs(20px, margin-bottom);
+		color: $text;
+	}
+	.#{$prefix}heading-sub-paragraph {
+		@include rfs(20px, margin-bottom);
+	}
+	.#{$prefix}author-wrapper {
+		@include rfs(20px, padding);
+		@include rfs(20px, gap);
+		background-color: rgba($color: $primary, $alpha: 0.1);
+		@include rfs(5px, border-radius);
+		@include rfs(20px, margin-bottom);
+
+		span {
+			color: $gray-d;
+			position: relative;
+			margin-left: 20px;
+			&::before {
+				position: absolute;
+				display: block;
+				width: 15px;
+				height: 3px;
+				background-color: $primary;
+				content: "";
+				top: 10px;
+				left: -20px;
+			}
+		}
+	}
+	.#{$prefix}scintific-list {
+		@include rfs(10px, gap);
+		@include rfs(20px, margin-bottom);
+		li {
+			position: relative;
+			@include rfs(30px, margin-left);
+			&::before {
+				content: url(../media/list-icon.webp);
+				@include rfs(3px, top);
+				@include rfs(-20px, left);
+				position: absolute;
+			}
+		}
+	}
+	.#{$prefix}post-wrapper {
+		@include rfs(10px, gap);
+		figure {
+			img {
+				@include rfs(5px, border-radius);
+			}
+		}
+		.#{$prefix}post-wrapper-content {
+			@include rfs(10px, gap);
+			span {
+				color: $text;
+			}
+			p {
+				color: $gray-d;
+				@include rfs(18px, font-size);
+				@include rfs(24px, line-height);
+			}
+		}
+	}
+	.#{$prefix}comments-main-wrapper {
+		@include rfs(20px, margin-top);
+		h4 {
+			@include rfs(30px, margin-bottom);
+		}
+		.#{$prefix}comment-wrapper {
+			@include rfs(20px, padding);
+			@include rfs(20px, gap);
+			border-bottom: 1px solid rgba($color: $primary, $alpha: 0.1);
+			@include rfs(20px, margin-bottom);
+
+			&:last-child {
+				border: none;
+			}
+			.#{$prefix}comment-content-wrapper {
+				@include rfs(10px, gap);
+
+				h4 {
+					margin-bottom: 0;
+				}
+				.#{$prefix}date-and-reply-wrapper {
+					@include rfs(10px, gap);
+				}
+			}
+		}
+	}
+	form {
+		@include rfs(50px, padding);
+		@include rfs(30px, margin-top);
+		background-color: rgba($color: $primary, $alpha: 0.1);
+		@include rfs(5px, border-radius);
+
+		input {
+			@include rfs(15px, padding);
+		}
+		textarea {
+			@include rfs(15px, padding);
+		}
+	}
+	.#{$prefix}search-wrapper {
+		margin-top: 0;
+		@include rfs(20px, padding);
+		button {
+			@include rfs(15px, padding);
+			background-color: $primary;
+		}
+	}
+	.#{$prefix}categories-wrapper {
+		@include rfs(30px, padding);
+		background-color: rgba($color: $primary, $alpha: 0.1);
+		@include rfs(20px, margin-top);
+		@include rfs(5px, border-radius);
+		ul {
+			@include rfs(20px, gap);
+			li {
+				a {
+					@include rfs(20px, font-size);
+					color: $text;
+					transition: $transition-base;
+					&:hover {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+	.#{$prefix}related-blog {
+		@include rfs(20px, margin-top);
+		@include rfs(30px, padding);
+		background-color: rgba($color: $primary, $alpha: 0.1);
+		@include rfs(5px, border-radius);
+
+		ul {
+			@include rfs(20px, gap);
+
+			.#{$prefix}related-blog-wrap {
+				@include rfs(20px, gap);
+				flex-wrap: nowrap;
+				.#{$prefix}related-blog-content-wrap {
+					@include rfs(10px, gap);
+					h5 {
+						@include rfs(20px, font-size);
+						@include rfs(27px, line-height);
+					}
+					a {
+						color: $primary;
+						transition: $transition-base;
+						&:hover {
+							color: $red;
+						}
+					}
+					@include rfs(10px gap);
+				}
+			}
+		}
+	}
+
+	.#{$prefix}popular-tags {
+		@include rfs(30px, padding);
+		background-color: rgba($color: $primary, $alpha: 0.1);
+		@include rfs(20px, margin-top);
+		@include rfs(5px, border-radius);
+		.#{$prefix}popular-conent-wrap {
+			@include rfs(20px, gap);
+			flex-wrap: wrap;
+			a {
+				background-color: rgba($color: $primary, $alpha: 0.1);
+				color: $sub-text;
+				transition: $transition-base;
+
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}blog-wrapper {
+		figure {
+			@include rfs(10px, margin-bottom);
+		}
+		.#{$prefix}icon-wrapper {
+			@include rfs(10px, margin-bottom);
+			@include rfs(10px, gap);
+			.#{$prefix}icon-box {
+				@include rfs(10px, gap);
+			}
+		}
+		h3 {
+			@include rfs(10px, margin-bottom);
+		}
+		h4 {
+			@include rfs(10px, margin-bottom);
+		}
+		.#{$prefix}heading-sub-paragraph {
+			@include rfs(10px, margin-bottom);
+		}
+		.#{$prefix}author-wrapper {
+			@include rfs(10px, padding);
+			@include rfs(10px, gap);
+			@include rfs(10px, margin-bottom);
+		}
+		.#{$prefix}scintific-list {
+			@include rfs(10px, margin-bottom);
+		}
+		.grid {
+			@include rfs(10px, gap);
+		}
+		.#{$prefix}comments-main-wrapper {
+			@include rfs(10px, margin-top);
+			h4 {
+				@include rfs(10px, margin-bottom);
+			}
+			.#{$prefix}comment-wrapper {
+				flex-direction: column;
+				flex-wrap: wrap;
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}

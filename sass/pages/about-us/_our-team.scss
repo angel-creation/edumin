@@ -1,0 +1,22 @@
+.#{$prefix}team-member {
+	.#{$prefix}shape-1 {
+		top: 0;
+		position: absolute;
+		left: 0;
+	}
+	.#{$prefix}shape-2 {
+		@include rfs(36px, top);
+		right: 0;
+		position: absolute;
+	}
+	.#{$prefix}shape-3 {
+		@include rfs(83px, bottom);
+		@include rfs(34px, left);
+		position: absolute;
+	}
+	.#{$prefix}shape-4 {
+		@include rfs(217px, top);
+		@include rfs(85px, left);
+		position: absolute;
+	}
+}

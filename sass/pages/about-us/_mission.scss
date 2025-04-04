@@ -1,0 +1,70 @@
+.#{$prefix}mission {
+	.#{$prefix}mission-wrapper {
+		display: flex;
+		align-items: center;
+		@include rfs(20px, gap);
+		@include rfs(50px, margin-bottom);
+	}
+	.#{$prefix}mission-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		@include rfs(24px, gap);
+
+		.#{$prefix}mission-box-wrapper {
+			@include rfs(20px, gap);
+			@include rfs(20px, padding);
+			background-color: $primary-100;
+			flex-wrap: nowrap;
+			.#{$prefix}mission-inner-content {
+				@include rfs(10px, gap);
+			}
+
+			h3 {
+				@include rfs(24px, font-size);
+				@include rfs(24px, line-height);
+			}
+			span {
+				@include rfs(24px, font-size);
+				@include rfs(32px, line-height);
+				font-weight: bold;
+				@include rfs(60px, width);
+				@include rfs(60px, height);
+				background-color: $secondary;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xl) {
+	.#{$prefix}mission {
+		.#{$prefix}mission-wrapper {
+			flex-direction: column;
+			@include rfs(20px, gap);
+		}
+		.#{$prefix}mission-content {
+			.#{$prefix}mission-box-wrapper {
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(sm) {
+	.#{$prefix}mission {
+		.grid {
+			@include rfs(10px, gap);
+		}
+		.#{$prefix}mission-wrapper {
+			flex-direction: column;
+			@include rfs(10px, gap);
+			@include rfs(10px, margin-bottom);
+		}
+		.#{$prefix}mission-content {
+			grid-template-columns: repeat(1, 1fr);
+			@include rfs(10px, gap);
+			.#{$prefix}mission-box-wrapper {
+				flex-wrap: wrap;
+				@include rfs(10px, padding);
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}

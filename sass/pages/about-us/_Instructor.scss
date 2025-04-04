@@ -1,0 +1,7 @@
+.#{$prefix}team-member {
+	.#{$prefix}team-member-main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		@include rfs(24px, gap);
+	}
+}

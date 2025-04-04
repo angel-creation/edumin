@@ -1,0 +1,50 @@
+.#{$prefix}team-member {
+	.#{$prefix}team-member-main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		@include rfs(25px, gap);
+		.#{$prefix}team-member-wraper {
+			.#{$prefix}text-content {
+				h2 {
+					@include rfs(24px, font-size);
+					@include rfs(31px, line-height);
+					color: $white;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xl) {
+	.#{$prefix}team-member {
+		.#{$prefix}team-member-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			@include rfs(25px, gap);
+		}
+	}
+}
+@include media-breakpoint-down(lg) {
+	.#{$prefix}team-member {
+		.#{$prefix}team-member-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			@include rfs(25px, gap);
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}team-member {
+		.#{$prefix}team-member-main-wrapper {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			@include rfs(10px, gap);
+			.#{$prefix}team-member-wraper {
+				@include rfs(10px, padding);
+				.#{$prefix}text-content {
+					@include rfs(10px, padding);
+				}
+			}
+		}
+	}
+}

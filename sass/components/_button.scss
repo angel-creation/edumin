@@ -1,0 +1,30 @@
+.btn {
+	@include rfs(15px 30px, padding);
+	color: $white;
+	background-color: $primary;
+	transition: $transition-base;
+	@include rfs(18px, font-size);
+	@include rfs(5px, border-radius);
+	font-weight: 400;
+
+	&:hover {
+		color: $primary-200;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.btn {
+		@include rfs(10px 15px, padding);
+
+		color: $white;
+		background-color: $primary;
+		transition: $transition-base;
+		@include rfs(16px, font-size);
+		@include rfs(5px, border-radius);
+		font-weight: 400;
+
+		&:hover {
+			color: $primary-200;
+		}
+	}
+}

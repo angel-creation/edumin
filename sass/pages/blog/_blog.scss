@@ -1,0 +1,46 @@
+.#{$prefix}blog {
+	.#{$prefix}blog-main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		@include rfs(25px, gap);
+		.#{$prefix}blog-wrapper {
+			h2 {
+				@include rfs(31px, line-height);
+				a {
+					@include rfs(24px, font-size);
+					@include rfs(31px, line-height);
+					transition: $transition-base;
+
+					&:hover {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-down(xl) {
+	.#{$prefix}blog {
+		.#{$prefix}blog-main-wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			@include rfs(25px, gap);
+			.#{$prefix}blog-wrapper {
+				@include rfs(10px, padding);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}blog {
+		.#{$prefix}blog-main-wrapper {
+			grid-template-columns: repeat(1, 1fr);
+			@include rfs(10px, gap);
+
+			.#{$prefix}blog-wrapper {
+				@include rfs(10px, gap);
+				@include rfs(10px, padding);
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.#{$prefix}general-questions {
+	.accordion {
+		.accordion-item {
+			border: none;
+			.accordion-header {
+				.accordion-button {
+					border: none;
+				}
+			}
+		}
+	}
+}

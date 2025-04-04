@@ -1,0 +1,163 @@
+.#{$prefix}courses-detail-wrapper {
+	background-color: rgba($color: $primary, $alpha: 0.1);
+	.#{$prefix}courses-detail-wrapper-box {
+		figure {
+			@include rfs(20px, margin-bottom);
+			img {
+				@include rfs(5px, border-radius);
+			}
+		}
+		.#{$prefix}main-heading-wrapper {
+			@include rfs(20px, margin-bottom);
+		}
+		.#{$prefix}trainer-detail-wrapper {
+			@include rfs(20px, gap);
+			@include rfs(20px, margin-bottom);
+			figure {
+				@include rfs(5px, border-radius);
+			}
+			p {
+				color: $gray-d;
+			}
+		}
+		h3 {
+			@include rfs(24px, font-size);
+			@include rfs(32px, line-height);
+			font-weight: bold;
+			@include rfs(20px, margin-bottom);
+		}
+		.#{$prefix}courses-description-wrapperr {
+			@include rfs(20px, margin-bottom);
+		}
+		.#{$prefix}what-you-will-learn-wrapper {
+			@include rfs(20px, gap);
+			p {
+				@include rfs(20px, gap);
+				display: flex;
+				align-items: center;
+			}
+		}
+		.#{$prefix}our-fcilities-wrap {
+			@include rfs(20px, margin-top);
+			@include rfs(20px, gap);
+			span {
+				@include rfs(10px, gap);
+				@include rfs(10px 15px, padding);
+				background-color: rgba($color: $primary, $alpha: 0.1);
+				@include rfs(5px, border-radius);
+			}
+		}
+	}
+	.#{$prefix}courses-detail-right-wrapper {
+		.#{$prefix}courses-detail-right-wrapper-box {
+			@include rfs(20px, gap);
+			@include rfs(20px, padding);
+			background-color: $white;
+			@include rfs(20px, border-radius);
+
+			h4 {
+				@include rfs(24px, font-size);
+				@include rfs(32px, line-height);
+				color: $text;
+			}
+		}
+		ul {
+			@include rfs(10px, gap);
+			li {
+				span {
+					@include rfs(10px, gap);
+				}
+			}
+		}
+	}
+
+	.#{$prefix}related-courses-main-wrapper {
+		@include rfs(20px, margin-top);
+		@include rfs(20px, gap);
+		@include rfs(20px, padding);
+		background-color: $white;
+		@include rfs(20px, border-radius);
+		ul {
+			@include rfs(20px, gap);
+
+			.#{$prefix}related-courses-wrapper {
+				@include rfs(20px, gap);
+				.#{$prefix}related-courses-content {
+					.#{$prefix}star-wrapper {
+						@include rfs(10px, gap);
+					}
+					@include rfs(10px, gap);
+					h4 {
+						@include rfs(18px, font-size);
+						@include rfs(24px, line-height);
+						font-weight: 400 !important;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.#{$prefix}courses-detail-wrapper {
+		.grid {
+			@include rfs(10px, gap);
+		}
+		.#{$prefix}courses-detail-wrapper-box {
+			figure {
+				@include rfs(10px, margin-bottom);
+			}
+			.#{$prefix}main-heading-wrapper {
+				@include rfs(10px, margin-bottom);
+			}
+			.#{$prefix}trainer-detail-wrapper {
+				@include rfs(10px, margin-bottom);
+				@include rfs(10px, gap);
+
+				h3 {
+					@include rfs(10px, margin-bottom);
+				}
+			}
+			.#{$prefix}courses-description-wrapperr {
+				@include rfs(10px, margin-bottom);
+				h3 {
+					@include rfs(10px, margin-bottom);
+				}
+			}
+			.#{$prefix}what-you-will-learn-wrapper {
+				@include rfs(10px, gap);
+			}
+
+			.#{$prefix}our-fcilities-wrap {
+				@include rfs(10px, gap);
+				flex-wrap: wrap;
+				@include rfs(10px, margin-top);
+			}
+		}
+	}
+	.#{$prefix}courses-detail-right-wrapper {
+		.#{$prefix}courses-detail-right-wrapper-box {
+			padding: 0.625rem !important;
+			gap: 0.625rem !important;
+			@include rfs(10px, margin-top);
+			ul {
+				li {
+					flex-wrap: wrap;
+				}
+			}
+		}
+		.#{$prefix}related-courses-main-wrapper {
+			@include rfs(10px, margin-top);
+			@include rfs(10px, padding);
+			@include rfs(10px, gap);
+			ul {
+				@include rfs(10px, gap);
+			}
+			.#{$prefix}related-courses {
+				@include rfs(10px, gap);
+			}
+		}
+	}
+}

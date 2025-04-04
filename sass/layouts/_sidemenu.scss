@@ -1,0 +1,21 @@
+.offcanvas {
+	.offcanvas-header {
+		@include rfs(50px, margin-top);
+	}
+	.offcanvas-body {
+		.sidebar-menu {
+			@include rfs(20px, gap);
+			li {
+				a {
+					color: $primary;
+					@include rfs(20px, font-size);
+					transition: $transition-base;
+
+					&:hover {
+						color: $secondary-600;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.#{$prefix}header {
+	@include rfs(15px 0 15px, padding);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	transition: all ease-out 0.5s;
+	position: fixed;
+	z-index: 1000;
+	.#{$prefix}header-wrapper {
+		.#{$prefix}navbar-menu-wrapper {
+			@include rfs(30px, gap);
+			ul {
+				@include rfs(20px, gap);
+				li {
+					a {
+						@include rfs(18px, font-size);
+						@include rfs(24px, line-height);
+						color: $primary;
+						transition: $transition-base;
+
+						&::after {
+							content: "";
+							display: block;
+							width: 0;
+							height: 3px;
+							transition: width 0.3s;
+							background-color: $secondary;
+						}
+						&:hover::after {
+							width: 100%;
+							transition: width 0.3s;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	button {
+		@include rfs(15px, padding);
+		background-color: $primary;
+		color: $white;
+		border: none;
+		@include rfs(5px, border-radius);
+	}
+
+	.#{$prefix}navbar-wrapper {
+		@include rfs(30px, gap);
+		ul {
+			@include rfs(20px, gap);
+		}
+	}
+}
